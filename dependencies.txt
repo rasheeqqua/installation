@@ -1,0 +1,1 @@
+ sudo apt install cmake gcc g++ libexpat1-dev qt5-default libxmu-dev libmotif-dev

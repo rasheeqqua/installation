@@ -1,0 +1,22 @@
+
+This database has been translated from the TENDL-2014[1,2] incident proton data library (written in ENDF-6 format) into the GEANT4 format by E. Mendoza and D. Cano-Ott. The part of the GEANT4 code which uses this database is the G4ParticleHP package, whose maintenance for the case of incident charged particles is being performed mainly by T. Koi and P. Arce.
+
+Some important remarks:
+
+1- The TENDL-2014 incident proton data library contains about 2600 isotopes. Only those isotopes present in the G4NDL4.5 neutron data library have been included in this database. The complete TENDL-2014 library will be available at the IAEA web page [3].
+2- The information present in the ENDF-6 format data libraries concerning the elastic interactions for incident charged particles cannot be managed by the G4ParticleHP package yet, so the elastic channel data present in the TENDL-2014 data library have not been translated into the GEANT4 format.
+3- The range of incident particle energies in TENDL-2014 is from 1 to 200 MeV.
+4- The following isotopes have been translated from the ENDF/B-VII.1[4] incident proton data library, instead of TENDL-2014. Together with the name of the ENDF/B-VII.1-isotopes we show their higher incident particle energies available in the database, which are different than for the rest of the isotopes (200 MeV). If these isotopes are used in the simulation users should avoid simulating particles with the G4NeutronHP package with energies higher than the following ones.
+  + H3,He3 --> 20 MeV.
+  + Li6 --> 2.5 MeV.
+  + Li7 --> 10 MeV.
+  + Be9 --> 113 MeV.
+  + B10 --> 3 MeV.
+  + H2,C12,N14,O16,Al27,Si28,Si29,Si30,P31,Ca40,Cr50,Cr52,Cr53,Cr54,Fe54,Fe56,Fe57,Ni58,Ni60,Ni61,Ni62,Ni64,Cu63,Cu65,Nb93,W182,W183,W184,W186,Hg196,Hg198,Hg199,Hg200,Hg201,Hg202,Hg204,Pb206,Pb207,Pb208,Bi209 --> 150 MeV.
+
+
+
+[1] "TENDL-2014: TALYS-based evaluated nuclear data library", A.J. Koning, D. Rochman, S. van der Marck, J. Kopecky, J. Ch. Sublet, S. Pomp, H. Sjostrand, R. Forrest, E. Bauge, H. Henriksson, O. Cabellos, S. Goriely J. Leppanen, H. Leeb, A. Plompen and R. Mills, www.talys.eu/tendl-2014.html.
+[2] A.J. Koning and D. Rochman, "Modern Nuclear Data Evaluation With The TALYS Code System", Nuclear Data Sheets 113 (2012) 2841.
+[3] https://www-nds.iaea.org/geant4/
+[4] M.B. Chadwick et al., "ENDF/B-VII.1 Nuclear Data for Science and Technology: Cross Sections, Covariances, Fission Product Yields and Decay Data", Nucl. Data Sheets 112 (2011) p. 2887-2996.  

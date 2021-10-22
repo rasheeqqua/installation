@@ -1,0 +1,2944 @@
+Environment variable "G4FORCE_RUN_MANAGER_TYPE" enabled with value == Serial. Forcing G4RunManager type...
+
+        ############################################
+        !!! WARNING - FPE detection is activated !!!
+        ############################################
+
+**************************************************************
+ Geant4 version Name: geant4-10-07-patch-02    (11-June-2021)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+<<< Geant4 Physics List simulation engine: FTFP_BERT
+
+G4VModularPhysicsList::ReplacePhysics: G4EmStandard with type : 2 is replaced with G4EmStandard_opt4
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+  OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+  OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+  OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+  RayTracerX (RayTracerX)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+/tracking/verbose 0
+/run/verbose 1
+/process/optical/verbose 1
+/run/physicsModified
+/control/cout/ignoreThreadsExcept 0
+/opnovice2/boxProperty RINDEX 0.000002 1.3 0.000008 1.4
+The MPT for the box is now: 
+0: RINDEX
+2e-06   1.3
+8e-06   1.4
+9: GROUPVEL
+2e-06   218.486
+8e-06   203.645
+.............
+/opnovice2/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+The MPT for the box is now: 
+0: RINDEX
+2e-06   1.3
+8e-06   1.4
+9: GROUPVEL
+2e-06   218.486
+8e-06   203.645
+16: ABSLENGTH
+2e-06   1e+06
+5e-06   2e+06
+8e-06   3e+06
+.............
+/opnovice2/worldProperty RINDEX 0.000002 1.01 0.000008 1.01
+The MPT for the world is now: 
+0: RINDEX
+2e-06   1.01
+8e-06   1.01
+9: GROUPVEL
+2e-06   296.824
+8e-06   296.824
+.............
+/opnovice2/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+The MPT for the world is now: 
+0: RINDEX
+2e-06   1.01
+8e-06   1.01
+9: GROUPVEL
+2e-06   296.824
+8e-06   296.824
+16: ABSLENGTH
+2e-06   1e+06
+5e-06   2e+06
+8e-06   3e+06
+.............
+/opnovice2/surfaceProperty SPECULARLOBECONSTANT 0.000002 0.1 0.000008 0.1
+SPECULARLOBECONSTANT 0.000002 0.1 0.000008 0.1
+The MPT for the surface is now: 
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+.............
+/opnovice2/surfaceProperty SPECULARSPIKECONSTANT 0.000002 0.1 0.000008 0.1
+SPECULARSPIKECONSTANT 0.000002 0.1 0.000008 0.1
+The MPT for the surface is now: 
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+.............
+/opnovice2/surfaceProperty BACKSCATTERCONSTANT 0.000002 0.1 0.000008 0.1
+BACKSCATTERCONSTANT 0.000002 0.1 0.000008 0.1
+The MPT for the surface is now: 
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+.............
+/opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0.1 0.000008 0.1
+TRANSMITTANCE 0.000002 0.1 0.000008 0.1
+The MPT for the surface is now: 
+5: TRANSMITTANCE
+2e-06   0.1
+8e-06   0.1
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+.............
+/opnovice2/surfaceProperty REFLECTIVITY 0.000002 0.8 0.000008 0.8
+REFLECTIVITY 0.000002 0.8 0.000008 0.8
+The MPT for the surface is now: 
+1: REFLECTIVITY
+2e-06   0.8
+8e-06   0.8
+5: TRANSMITTANCE
+2e-06   0.1
+8e-06   0.1
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+.............
+/opnovice2/surfaceProperty EFFICIENCY 0.000002 0.1 0.000008 0.1
+EFFICIENCY 0.000002 0.1 0.000008 0.1
+The MPT for the surface is now: 
+1: REFLECTIVITY
+2e-06   0.8
+8e-06   0.8
+4: EFFICIENCY
+2e-06   0.1
+8e-06   0.1
+5: TRANSMITTANCE
+2e-06   0.1
+8e-06   0.1
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+.............
+/opnovice2/surfaceProperty RINDEX 0.000002 1.4 0.000008 1.5
+RINDEX 0.000002 1.4 0.000008 1.5
+The MPT for the surface is now: 
+0: RINDEX
+2e-06   1.4
+8e-06   1.5
+1: REFLECTIVITY
+2e-06   0.8
+8e-06   0.8
+4: EFFICIENCY
+2e-06   0.1
+8e-06   0.1
+5: TRANSMITTANCE
+2e-06   0.1
+8e-06   0.1
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+9: GROUPVEL
+2e-06   203.645
+8e-06   190.691
+.............
+/opnovice2/surfaceSigmaAlpha 0.2
+/run/geometryModified
+Surface sigma alpha set to: 0.2
+/run/initialize
+******  opticalSurface->DumpInfo:
+  Surface type   = 1
+  Surface finish = 3
+  Surface model  = 1
+
+  Surface parameter 
+  ----------------- 
+ sigma_alpha: 0.2
+
+******  end of opticalSurface->DumpInfo
+
+ hInelastic FTFP_BERT : threshold between BERT and FTFP is over the interval 
+ for pions :   3 to 6 GeV
+ for kaons :   3 to 6 GeV
+ for proton :  3 to 6 GeV
+ for neutron : 3 to 6 GeV
+
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+OpAbsorption is created 
+OpRayleigh is created 
+OpMieHG is created 
+OpBoundary is created 
+OpWLS is created 
+OpWLS2 is created 
+### Birks coefficients used in run time
+   G4_WATER     0.126 mm/MeV     0.0126 g/cm^2/MeV  massFactor=  85.0756 effCharge= 62.0606
+#
+/gun/particle opticalphoton
+/gun/energy 3 eV
+/gun/position 0 0 0 cm
+# will be normalized
+/gun/direction .9 .44 0
+/opnovice2/gun/optPhotonPolar
+#
+/analysis/setFileName unified
+Set file name: unified
+/analysis/h1/set 10 40 -1 39
+/analysis/h1/set 11 100 -1.1 1.1
+/analysis/h1/set 12 100 -1.1 1.1
+/analysis/h1/set 13 100 -1.1 1.1
+/analysis/h1/set 14 100 -1.1 1.1
+/analysis/h1/set 15 100 -1.1 1.1
+/analysis/h1/set 16 100 -1.1 1.1
+/analysis/h1/set 17 100 -1.1 1.1
+/analysis/h1/set 18 100 -1.1 1.1
+/analysis/h1/set 19 100 -1.1 1.1
+###############################################################################
+################################# UNIFIED #####################################
+###############################################################################
+/opnovice2/surfaceModel unified
+/run/geometryModified
+/opnovice2/surfaceType dielectric_dielectric
+/run/geometryModified
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ground ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+/opnovice2/surfaceFinish ground
+/run/geometryModified
+## unified, davis, lut use sigma_alpha glisur uses polish
+/run/beamOn 10000
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld  1  0  0
+### ===  Ignore cuts flag:   0
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 174 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 20 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 160 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LowEPComptonModel : Emin=    0 eV  Emax=   20 MeV Fluo
+        KleinNishina : Emin=   20 MeV Emax=  100 TeV Fluo
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+      BetheHeitler5D : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 20 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 180 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  GoudsmitSaunderson : Emin=    0 eV  Emax=  100 MeV Nbins=120 100 eV  - 100 MeV
+              StepLim=SafetyPlus Rfact=0.08 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=120 100 MeV - 100 TeV
+              StepLim=SafetyPlus Rfact=0.08 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+eIoni:  for e-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.2, 0.01 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       LowEnergyIoni : Emin=    0 eV  Emax=  100 keV  deltaVI
+        MollerBhabha : Emin=  100 keV Emax=  100 TeV  deltaVI
+
+eBrem:  for e-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  AngularGen2BS
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  AngularGen2BS
+
+ePairProd:  for e-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 25x1001 from 0.1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           ePairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for e-, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  GoudsmitSaunderson : Emin=    0 eV  Emax=  100 MeV Nbins=120 100 eV  - 100 MeV
+              StepLim=SafetyPlus Rfact=0.08 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=120 100 MeV - 100 TeV
+              StepLim=SafetyPlus Rfact=0.08 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+eIoni:  for e+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.2, 0.01 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             PenIoni : Emin=    0 eV  Emax=  100 keV
+        MollerBhabha : Emin=  100 keV Emax=  100 TeV  deltaVI
+
+eBrem:  for e+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  AngularGen2BS
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  AngularGen2BS
+
+ePairProd:  for e+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 25x1001 from 0.1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           ePairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+annihil:  for e+, integral:1  SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV  deltaVI
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV  deltaVI
+
+hBrems:  for proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 17x1001 from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+nuclearStopping:  for proton SubType=8 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping : Emin=    0 eV  Emax=    1 MeV
+
+msc:  for GenericIon  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+ionIoni:  for GenericIon  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.02 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+         ParamICRU73 : Emin=    0 eV  Emax=  100 TeV  deltaVI
+
+nuclearStopping:  for GenericIon SubType=8 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping : Emin=    0 eV  Emax=    1 MeV
+
+msc:  for alpha  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+ionIoni:  for alpha  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.02 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV  deltaVI
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV  deltaVI
+
+nuclearStopping:  for alpha SubType=8 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping : Emin=    0 eV  Emax=    1 MeV
+
+msc:  for anti_proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for anti_proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV  deltaVI
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV  deltaVI
+
+hBrems:  for anti_proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for anti_proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 17x1001 from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for anti_proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for kaon+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV  deltaVI
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV  deltaVI
+
+hBrems:  for kaon+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 18x1001 from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for kaon-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV  deltaVI
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV  deltaVI
+
+hBrems:  for kaon-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 18x1001 from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+muIoni:  for mu+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV  deltaVI
+          BetheBloch : Emin=  200 keV Emax=    1 GeV  deltaVI
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 21x1001 from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+muIoni:  for mu-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV  deltaVI
+          BetheBloch : Emin=  200 keV Emax=    1 GeV  deltaVI
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 21x1001 from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for pi+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV  deltaVI
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV  deltaVI
+
+hBrems:  for pi+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 20x1001 from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for pi-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV  deltaVI
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV  deltaVI
+
+hBrems:  for pi-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 20x1001 from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for B-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: B-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for D-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: D-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: anti_lambdaInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:               GammaNPreco: 0 eV  ---> 200 MeV
+        Model:            BertiniCascade: 199 MeV ---> 6 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            PhotoNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for sigma-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: sigma-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1
+Isomer production flag                              1
+Internal e- conversion flag                         1
+Store e- internal conversion data                   0
+Electron internal conversion ID                     2
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+=======================================================================
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+### Run 0 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.180000s Real=0.191214s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0069
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        6
+Total # of surface events:       9994
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   960
+  Fresnel refraction:             828
+  Lambertian reflection:         5095
+  Lobe reflection:                739
+  Spike reflection:               690
+  Backscattering:                 687
+  Absorption:                     914
+  Detection:                       81
+ Sum:                            9994
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.720012 rms = 0.227311
+ Y momentum dir of backward-going photons: mean = 0.0469077 rms = 0.488742
+ Z momentum dir of backward-going photons: mean = -0.00889124 rms = 0.43447
+ X momentum dir of forward-going photons: mean = 0.871239 rms = 0.0530851
+ Y momentum dir of forward-going photons: mean = 0.480335 rms = 0.0752354
+ Z momentum dir of forward-going photons: mean = -0.000975936 rms = 0.0417183
+ X momentum dir of Fresnel-refracted photons: mean = 0.807147 rms = 0.0602006
+ Y momentum dir of Fresnel-refracted photons: mean = 0.577437 rms = 0.0748539
+ Z momentum dir of Fresnel-refracted photons: mean = -0.00328023 rms = 0.0764341
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+# restore default
+#/opnovice2/surfaceSigmaAlpha 0.0
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ polished ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+/opnovice2/surfaceFinish polished
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 1 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.140000s Real=0.145020s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0089
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        3
+Total # of surface events:       9997
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                  1051
+  Fresnel refraction:             764
+  Fresnel reflection:            7168
+  Absorption:                     924
+  Detection:                       90
+ Sum:                            9997
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.898384 rms = 6.18353e-07
+ Y momentum dir of backward-going photons: mean = 0.43921 rms = 1.69899e-07
+ Z momentum dir of backward-going photons: mean = 0 rms = 0
+ X momentum dir of forward-going photons: mean = 0.877177 rms = 0.0348652
+ Y momentum dir of forward-going photons: mean = 0.475225 rms = 0.0592095
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0.819857 rms = 7.06824e-08
+ Y momentum dir of Fresnel-refracted photons: mean = 0.572568 rms = 9.39482e-08
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.01
+The MPT for the surface is now: 
+0: RINDEX
+2e-06   1.4
+8e-06   1.5
+1: REFLECTIVITY
+2e-06   0.8
+8e-06   0.8
+4: EFFICIENCY
+2e-06   0.1
+8e-06   0.1
+5: TRANSMITTANCE
+2e-06   0.1
+8e-06   0.1
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+9: GROUPVEL
+2e-06   203.645
+8e-06   190.691
+0: SURFACEROUGHNESS
+0.01
+.............
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 2 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.150000s Real=0.153609s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.011
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        9
+Total # of surface events:       9991
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                  1015
+  Fresnel refraction:             842
+  Lambertian reflection:         7171
+  Absorption:                     863
+  Detection:                      100
+ Sum:                            9991
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.670783 rms = 0.235805
+ Y momentum dir of backward-going photons: mean = -0.00538139 rms = 0.4992
+ Z momentum dir of backward-going photons: mean = -0.00158746 rms = 0.495192
+ X momentum dir of forward-going photons: mean = 0.874938 rms = 0.0359367
+ Y momentum dir of forward-going photons: mean = 0.479028 rms = 0.0610292
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0.819857 rms = 2.78775e-08
+ Y momentum dir of Fresnel-refracted photons: mean = 0.572568 rms = 8.39638e-08
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+# restore default
+/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.0
+The MPT for the surface is now: 
+0: RINDEX
+2e-06   1.4
+8e-06   1.5
+1: REFLECTIVITY
+2e-06   0.8
+8e-06   0.8
+4: EFFICIENCY
+2e-06   0.1
+8e-06   0.1
+5: TRANSMITTANCE
+2e-06   0.1
+8e-06   0.1
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+9: GROUPVEL
+2e-06   203.645
+8e-06   190.691
+0: SURFACEROUGHNESS
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : mat202
+      issued by : G4MaterialPropertiesTable::DumpTable()
+No Material Constant Property.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+.............
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ painted ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+/opnovice2/surfaceFinish polishedfrontpainted
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 3 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.160000s Real=0.157253s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0095
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        9
+Total # of surface events:       9991
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                  1015
+  Spike reflection:              7946
+  Absorption:                     911
+  Detection:                      119
+ Sum:                            9991
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.898384 rms = 6.34569e-07
+ Y momentum dir of backward-going photons: mean = 0.43921 rms = 1.7201e-07
+ Z momentum dir of backward-going photons: mean = 0 rms = 0
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.95994e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 1.04574e-07
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish groundfrontpainted
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 4 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.170000s Real=0.176251s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.01
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        6
+Total # of surface events:       9994
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                  1051
+  Lambertian reflection:         7970
+  Absorption:                     902
+  Detection:                       71
+ Sum:                            9994
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.672126 rms = 0.233854
+ Y momentum dir of backward-going photons: mean = -0.00666732 rms = 0.496492
+ Z momentum dir of backward-going photons: mean = 0.00238881 rms = 0.496996
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.95994e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 1.03373e-07
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish polishedbackpainted
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 5 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.650000s Real=0.736672s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.017
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:       13
+Total # of surface events:       9987
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   367
+  Fresnel refraction:             247
+  Lambertian reflection:         6284
+  Lobe reflection:                890
+  Spike reflection:               874
+  Backscattering:                 934
+  Absorption:                     352
+  Detection:                       39
+ Sum:                            9987
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.723691 rms = 0.227569
+ Y momentum dir of backward-going photons: mean = 0.0395559 rms = 0.488043
+ Z momentum dir of backward-going photons: mean = -0.00230405 rms = 0.429801
+ X momentum dir of forward-going photons: mean = 0.734401 rms = 0.240507
+ Y momentum dir of forward-going photons: mean = 0.135512 rms = 0.463038
+ Z momentum dir of forward-going photons: mean = 0.0119096 rms = 0.412192
+ X momentum dir of Fresnel-refracted photons: mean = -0.746521 rms = 0.221272
+ Y momentum dir of Fresnel-refracted photons: mean = 0.112686 rms = 0.461769
+ Z momentum dir of Fresnel-refracted photons: mean = -0.010677 rms = 0.409515
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish groundbackpainted
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 6 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.650000s Real=0.756925s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.016
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        4
+Total # of surface events:       9996
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   354
+  Fresnel refraction:             241
+  Lambertian reflection:         6317
+  Lobe reflection:                881
+  Spike reflection:               916
+  Backscattering:                 915
+  Absorption:                     338
+  Detection:                       34
+ Sum:                            9996
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.720402 rms = 0.228866
+ Y momentum dir of backward-going photons: mean = 0.0399027 rms = 0.48855
+ Z momentum dir of backward-going photons: mean = 0.00771037 rms = 0.433944
+ X momentum dir of forward-going photons: mean = 0.722614 rms = 0.232915
+ Y momentum dir of forward-going photons: mean = 0.0927507 rms = 0.478183
+ Z momentum dir of forward-going photons: mean = -0.035438 rms = 0.430189
+ X momentum dir of Fresnel-refracted photons: mean = -0.685406 rms = 0.231451
+ Y momentum dir of Fresnel-refracted photons: mean = 0.0767376 rms = 0.493659
+ Z momentum dir of Fresnel-refracted photons: mean = 0.0293401 rms = 0.475606
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dielectric_metal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+/opnovice2/surfaceType dielectric_metal
+/run/geometryModified
+/opnovice2/surfaceFinish polished
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 7 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.150000s Real=0.186673s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0088
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        7
+Total # of surface events:       9993
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   990
+  Spike reflection:              7989
+  Absorption:                     920
+  Detection:                       94
+ Sum:                            9993
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.898384 rms = 6.35356e-07
+ Y momentum dir of backward-going photons: mean = 0.43921 rms = 1.7201e-07
+ Z momentum dir of backward-going photons: mean = 0 rms = 0
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.95427e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 1.02021e-07
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish ground
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 8 starts.
+... create file : unified.root - done
+... open analysis file : unified.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.170000s Real=0.197295s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0078
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:       13
+Total # of surface events:       9987
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                  1032
+  Lambertian reflection:         5516
+  Lobe reflection:                809
+  Spike reflection:               814
+  Backscattering:                 758
+  Absorption:                     960
+  Detection:                       98
+ Sum:                            9987
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.721154 rms = 0.228712
+ Y momentum dir of backward-going photons: mean = 0.0526095 rms = 0.491652
+ Z momentum dir of backward-going photons: mean = 0.00430663 rms = 0.427925
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.9656e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 1.07195e-07
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : unified.root - done
+... close file : unified.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+###############################################################################
+################################# GLISUR ######################################
+###############################################################################
+/opnovice2/surfaceModel glisur
+/run/geometryModified
+/opnovice2/surfaceType dielectric_dielectric
+/run/geometryModified
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ polished ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+/opnovice2/surfaceFinish polished
+/run/geometryModified
+/analysis/setFileName glisur
+Set file name: glisur
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 9 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.150000s Real=0.175992s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0087
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        8
+Total # of surface events:       9992
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   977
+  Fresnel refraction:             856
+  Fresnel reflection:            7154
+  Absorption:                     902
+  Detection:                      103
+ Sum:                            9992
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.898384 rms = 6.17814e-07
+ Y momentum dir of backward-going photons: mean = 0.43921 rms = 1.69899e-07
+ Z momentum dir of backward-going photons: mean = 0 rms = 0
+ X momentum dir of forward-going photons: mean = 0.874699 rms = 0.0360408
+ Y momentum dir of forward-going photons: mean = 0.479434 rms = 0.061206
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0.819857 rms = 1.05367e-08
+ Y momentum dir of Fresnel-refracted photons: mean = 0.572568 rms = 8.1617e-08
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.01
+The MPT for the surface is now: 
+0: RINDEX
+2e-06   1.4
+8e-06   1.5
+1: REFLECTIVITY
+2e-06   0.8
+8e-06   0.8
+4: EFFICIENCY
+2e-06   0.1
+8e-06   0.1
+5: TRANSMITTANCE
+2e-06   0.1
+8e-06   0.1
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+9: GROUPVEL
+2e-06   203.645
+8e-06   190.691
+0: SURFACEROUGHNESS
+0.01
+.............
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 10 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.180000s Real=0.278189s Sys=0.010000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0082
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        4
+Total # of surface events:       9996
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   974
+  Fresnel refraction:             827
+  Lambertian reflection:         7125
+  Absorption:                     960
+  Detection:                      110
+ Sum:                            9996
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.669432 rms = 0.232681
+ Y momentum dir of backward-going photons: mean = 0.00091707 rms = 0.495121
+ Z momentum dir of backward-going photons: mean = -0.0126131 rms = 0.50241
+ X momentum dir of forward-going photons: mean = 0.875764 rms = 0.0355614
+ Y momentum dir of forward-going photons: mean = 0.477624 rms = 0.0603917
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0.819857 rms = 3.79907e-08
+ Y momentum dir of Fresnel-refracted photons: mean = 0.572568 rms = 8.65679e-08
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.0
+The MPT for the surface is now: 
+0: RINDEX
+2e-06   1.4
+8e-06   1.5
+1: REFLECTIVITY
+2e-06   0.8
+8e-06   0.8
+4: EFFICIENCY
+2e-06   0.1
+8e-06   0.1
+5: TRANSMITTANCE
+2e-06   0.1
+8e-06   0.1
+6: SPECULARLOBECONSTANT
+2e-06   0.1
+8e-06   0.1
+7: SPECULARSPIKECONSTANT
+2e-06   0.1
+8e-06   0.1
+8: BACKSCATTERCONSTANT
+2e-06   0.1
+8e-06   0.1
+9: GROUPVEL
+2e-06   203.645
+8e-06   190.691
+0: SURFACEROUGHNESS
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : mat202
+      issued by : G4MaterialPropertiesTable::DumpTable()
+No Material Constant Property.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+.............
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ground ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+/opnovice2/surfaceFinish ground
+/run/geometryModified
+/run/initialize
+/opnovice2/surfacePolish 0.2
+/run/geometryModified
+Surface polish set to: 0.2
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 11 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.140000s Real=0.163363s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0091
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:       14
+Total # of surface events:       9986
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                  1039
+  Fresnel refraction:             623
+  Fresnel reflection:            5813
+  Total internal reflection:     1471
+  Absorption:                     940
+  Detection:                      100
+ Sum:                            9986
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.575697 rms = 0.278336
+ Y momentum dir of backward-going photons: mean = 0.314781 rms = 0.492902
+ Z momentum dir of backward-going photons: mean = 0.00209002 rms = 0.499058
+ X momentum dir of forward-going photons: mean = 0.877568 rms = 0.0667833
+ Y momentum dir of forward-going photons: mean = 0.462797 rms = 0.0752703
+ Z momentum dir of forward-going photons: mean = 0.000253129 rms = 0.0746232
+ X momentum dir of Fresnel-refracted photons: mean = 0.806089 rms = 0.136208
+ Y momentum dir of Fresnel-refracted photons: mean = 0.542525 rms = 0.117942
+ Z momentum dir of Fresnel-refracted photons: mean = 0.000272019 rms = 0.15305
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+# restore default
+/opnovice2/surfacePolish 1.0
+/run/geometryModified
+Surface polish set to: 1
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ painted ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+/opnovice2/surfaceFinish polishedfrontpainted
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 12 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.160000s Real=0.162508s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0087
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        4
+Total # of surface events:       9996
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   976
+  Spike reflection:              8018
+  Absorption:                     909
+  Detection:                       93
+ Sum:                            9996
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.898384 rms = 6.3588e-07
+ Y momentum dir of backward-going photons: mean = 0.43921 rms = 1.72171e-07
+ Z momentum dir of backward-going photons: mean = 0 rms = 0
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.95427e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 1.00376e-07
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish polishedbackpainted
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 13 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.420000s Real=0.489675s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.021
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        8
+Total # of surface events:       9992
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   381
+  Fresnel refraction:             287
+  Fresnel reflection:            8966
+  Absorption:                     323
+  Detection:                       35
+ Sum:                            9992
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.898384 rms = 6.36839e-07
+ Y momentum dir of backward-going photons: mean = 0.43921 rms = 1.74652e-07
+ Z momentum dir of backward-going photons: mean = 0 rms = 0
+ X momentum dir of forward-going photons: mean = 0.912889 rms = 1.38188e-07
+ Y momentum dir of forward-going photons: mean = 0.408207 rms = 5.18873e-08
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = -0.898384 rms = 4.59285e-08
+ Y momentum dir of Fresnel-refracted photons: mean = 0.43921 rms = 4.31234e-08
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish groundfrontpainted
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 14 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.200000s Real=0.437701s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0083
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        5
+Total # of surface events:       9995
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   933
+  Lambertian reflection:         8091
+  Absorption:                     859
+  Detection:                      112
+ Sum:                            9995
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.669191 rms = 0.237394
+ Y momentum dir of backward-going photons: mean = 0.00243581 rms = 0.501338
+ Z momentum dir of backward-going photons: mean = 0.00179285 rms = 0.494448
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.94573e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 9.5414e-08
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish groundbackpainted
+/run/geometryModified
+/opnovice2/surfacePolish 0.2
+/run/geometryModified
+Surface polish set to: 0.2
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 15 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.400000s Real=0.408891s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.015
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        8
+Total # of surface events:       9992
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   411
+  Fresnel refraction:             291
+  Fresnel reflection:            8869
+  Absorption:                     377
+  Detection:                       44
+ Sum:                            9992
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.584677 rms = 0.277696
+ Y momentum dir of backward-going photons: mean = 0.29772 rms = 0.496666
+ Z momentum dir of backward-going photons: mean = 0.0022219 rms = 0.4957
+ X momentum dir of forward-going photons: mean = 0.624194 rms = 0.294167
+ Y momentum dir of forward-going photons: mean = 0.105777 rms = 0.525867
+ Z momentum dir of forward-going photons: mean = 0.00632431 rms = 0.485883
+ X momentum dir of Fresnel-refracted photons: mean = -0.607915 rms = 0.276768
+ Y momentum dir of Fresnel-refracted photons: mean = 0.0075118 rms = 0.548584
+ Z momentum dir of Fresnel-refracted photons: mean = -0.00372129 rms = 0.502817
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfacePolish 1.0
+/run/geometryModified
+Surface polish set to: 1
+#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dielectric_metal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+/opnovice2/surfaceType dielectric_metal
+/run/geometryModified
+/opnovice2/surfaceFinish polished
+/run/geometryModified
+/run/initialize
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 16 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.160000s Real=0.175441s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0088
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:       12
+Total # of surface events:       9988
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   972
+  Spike reflection:              8016
+  Absorption:                     906
+  Detection:                       94
+ Sum:                            9988
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.898384 rms = 6.3588e-07
+ Y momentum dir of backward-going photons: mean = 0.43921 rms = 1.72171e-07
+ Z momentum dir of backward-going photons: mean = 0 rms = 0
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.95427e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 1.00099e-07
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish ground
+/run/geometryModified
+/run/initialize
+/opnovice2/surfacePolish 0.2
+/run/geometryModified
+Surface polish set to: 0.2
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 17 starts.
+... create file : glisur.root - done
+... open analysis file : glisur.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.170000s Real=0.177160s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0086
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        6
+Total # of surface events:       9994
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   930
+  Lobe reflection:               8042
+  Absorption:                     922
+  Detection:                      100
+ Sum:                            9994
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.570476 rms = 0.278902
+ Y momentum dir of backward-going photons: mean = 0.318492 rms = 0.496087
+ Z momentum dir of backward-going photons: mean = -0.00332399 rms = 0.499219
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.95427e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 9.85619e-08
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : glisur.root - done
+... close file : glisur.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfacePolish 1.0
+/run/geometryModified
+Surface polish set to: 1
+###############################################################################
+################################# DAVIS LUT ###################################
+###############################################################################
+/opnovice2/surfaceModel DAVIS
+/run/geometryModified
+/opnovice2/surfaceType dielectric_LUTDAVIS
+/run/geometryModified
+/opnovice2/surfaceFinish RoughTeflon_LUT
+G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/RoughTeflon_LUT.z successfully read in.
+LUT DAVIS - data file: RoughTeflon_LUT.z read in! 
+G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/RoughTeflon_LUTR.z successfully read in.
+LUT DAVIS - reflectivity data file: RoughTeflon_LUTR.z read in! 
+/run/geometryModified
+/run/initialize
+/analysis/setFileName davis_roughTeflon
+Set file name: davis_roughTeflon
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 18 starts.
+... create file : davis_roughTeflon.root - done
+... open analysis file : davis_roughTeflon.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=1.360000s Real=1.418759s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.042
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        8
+Total # of surface events:       9992
+Unaccounted for:                    0
+
+Surface events by process:
+  Lobe reflection:               9551
+  Absorption:                     393
+  Detection:                       48
+ Sum:                            9992
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.774679 rms = 0.208788
+ Y momentum dir of backward-going photons: mean = 0.20789 rms = 0.434028
+ Z momentum dir of backward-going photons: mean = 0.00237147 rms = 0.353096
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 1.19209e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 2.8856e-08
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : davis_roughTeflon.root - done
+... close file : davis_roughTeflon.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+/opnovice2/surfaceFinish Detector_LUT
+G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/Detector_LUT.z successfully read in.
+LUT DAVIS - data file: Detector_LUT.z read in! 
+G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/Detector_LUTR.z successfully read in.
+LUT DAVIS - reflectivity data file: Detector_LUTR.z read in! 
+/run/geometryModified
+/analysis/setFileName davis_detector
+Set file name: davis_detector
+/run/beamOn 10000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 19 starts.
+... create file : davis_detector.root - done
+... open analysis file : davis_detector.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10000
+  User=0.070000s Real=0.082904s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 10000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.0005
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+04
+OpAbsorption before surface:        5
+Total # of surface events:       9995
+Unaccounted for:                    0
+
+Surface events by process:
+  Lobe reflection:                101
+  Absorption:                    8965
+  Detection:                      929
+ Sum:                            9995
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.906368 rms = 0.00235268
+ Y momentum dir of backward-going photons: mean = 0.422428 rms = 0.00506665
+ Z momentum dir of backward-going photons: mean = 0.000491625 rms = 0.00452951
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 5.58247e-07
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 8.9096e-08
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : davis_detector.root - done
+... close file : davis_detector.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+###############################################################################
+################################# LUT (LBNL) ##################################
+###############################################################################
+/opnovice2/surfaceModel LUT
+/run/geometryModified
+/opnovice2/surfaceType dielectric_LUT
+/run/geometryModified
+/opnovice2/surfaceFinish polishedlumirrorair
+G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/PolishedLumirror.z successfully read in.
+LUT - data file: PolishedLumirror.z read in! 
+/run/geometryModified
+/analysis/setFileName lbnl_polishedLumirrorAir
+Set file name: lbnl_polishedLumirrorAir
+/run/beamOn 1000
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  2.51944 keV    e-  276.265 keV    e+  270.751 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+### Run 20 starts.
+... create file : lbnl_polishedLumirrorAir.root - done
+... open analysis file : lbnl_polishedLumirrorAir.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 1000
+  User=0.090000s Real=0.097799s Sys=0.000000s
+
+    Run Summary
+---------------------------------
+Primary particle was: opticalphoton with energy 3 eV .
+Number of events: 1000
+Material of world: G4_AIR
+Material of tank:  G4_WATER
+
+Average number of photons absorbed by WLS per event: 0 
+Average number of photons created by WLS per event: 0
+Average energy of WLS photons created per event: 0 eV.
+Average number of photons absorbed by WLS2 per event: 0 
+Average number of photons created by WLS2 per event: 0
+Average energy of WLS2 photons created per event: 0 eV.
+Average number of OpRayleigh per event:   0
+Average number of OpAbsorption per event: 0.013
+
+Surface events (on +X surface, maximum one per photon) this run:
+# of primary particles:         1e+03
+OpAbsorption before surface:        1
+Total # of surface events:        999
+Unaccounted for:                    0
+
+Surface events by process:
+  Transmission:                   100
+  Absorption:                      86
+  Detection:                       11
+  Polished Lumirror Air reflection:      802
+ Sum:                             999
+ Unaccounted for:                   0
+---------------------------------
+
+ Histogram statistics for the entire run:
+
+ X momentum dir of backward-going photons: mean = -0.93139 rms = 0.0384418
+ Y momentum dir of backward-going photons: mean = 0.151303 rms = 0.259337
+ Z momentum dir of backward-going photons: mean = -0.0147158 rms = 0.201667
+ X momentum dir of forward-going photons: mean = 0.898384 rms = 3.332e-08
+ Y momentum dir of forward-going photons: mean = 0.43921 rms = 2.9333e-08
+ Z momentum dir of forward-going photons: mean = 0 rms = 0
+ X momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Y momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+ Z momentum dir of Fresnel-refracted photons: mean = 0 rms = 0
+
+... write file : lbnl_polishedLumirrorAir.root - done
+... close file : lbnl_polishedLumirrorAir.root - done
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+Graphics systems deleted.
+Visualization Manager deleting...
+G4 kernel has come to Quit state.
+================== Deleting memory pools ===================
+Number of memory pools allocated: 10 of which, static: 0
+Dynamic pools deleted: 10 / Total memory freed: 0.016 MB
+============================================================
+RunManagerKernel is deleted. Good bye :)

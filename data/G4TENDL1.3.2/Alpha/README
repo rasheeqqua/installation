@@ -1,0 +1,16 @@
+
+This database has been translated from the TENDL-2014[1,2] incident alpha data library (written in ENDF-6 format) into the GEANT4 format by E. Mendoza and D. Cano-Ott. The part of the GEANT4 code which uses this database is the G4ParticleHP package, whose maintenance for the case of incident charged particles is being performed mainly by T. Koi and P. Arce.
+
+Some important remarks:
+
+1- The TENDL-2014 incident alpha data library contains about 2600 isotopes. Only those isotopes present in the G4NDL4.5 neutron data library have been included in this database. The complete TENDL-2014 library will be available at the IAEA web page [3].
+2- The information present in the ENDF-6 format data libraries concerning the elastic interactions for incident charged particles cannot be managed by the G4ParticleHP package yet, so the elastic channel data present in the TENDL-2014 data library have not been translated into the GEANT4 format.
+3- The range of incident particle energies in TENDL-2014 is from 1 to 200 MeV.
+
+
+
+[1] "TENDL-2014: TALYS-based evaluated nuclear data library", A.J. Koning, D. Rochman, S. van der Marck, J. Kopecky, J. Ch. Sublet, S. Pomp, H. Sjostrand, R. Forrest, E. Bauge, H. Henriksson, O. Cabellos, S. Goriely J. Leppanen, H. Leeb, A. Plompen and R. Mills, www.talys.eu/tendl-2014.html.
+[2] A.J. Koning and D. Rochman, "Modern Nuclear Data Evaluation With The TALYS Code System", Nuclear Data Sheets 113 (2012) 2841.
+[3] https://www-nds.iaea.org/geant4/
+
+

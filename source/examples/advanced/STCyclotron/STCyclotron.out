@@ -1,0 +1,249 @@
+Environment variable "G4FORCE_RUN_MANAGER_TYPE" enabled with value == Serial. Forcing G4RunManager type...
+
+        ############################################
+        !!! WARNING - FPE detection is activated !!!
+        ############################################
+
+**************************************************************
+ Geant4 version Name: geant4-10-07-patch-02    (11-June-2021)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Using Root
+ G4Material WARNING: define a material with density=0 is not allowed. 
+ The material vacuumBeam will be constructed with the default minimal density: 1e-25g/cm3
+Checking overlaps for volume Layer_PART1 (G4UnionSolid) ... OK! 
+Checking overlaps for volume Tube_PART1 (G4Tubs) ... OK! 
+Checking overlaps for volume Layer_PART2 (G4Tubs) ... OK! 
+Checking overlaps for volume Tube_PART2 (G4Tubs) ... OK! 
+Checking overlaps for volume Grid (G4Polyhedra) ... OK! 
+Checking overlaps for volume Foil (G4Tubs) ... OK! 
+Checking overlaps for volume Layer_PART3 (G4Tubs) ... OK! 
+Checking overlaps for volume Tube_PART3 (G4Tubs) ... OK! 
+Checking overlaps for volume Layer_PART4 (G4UnionSolid) ... OK! 
+Checking overlaps for volume Layer1_PART4 (G4Tubs) ... OK! 
+Checking overlaps for volume Tube_PART4 (G4Tubs) ... OK! 
+Checking overlaps for volume Target (G4Tubs) ... OK! 
+Checking overlaps for volume Layer1_PART5 (G4Tubs) ... OK! 
+Checking overlaps for volume Layer2_PART5 (G4Tubs) ... OK! 
+Checking overlaps for volume Layer3_PART5 (G4Tubs) ... OK! 
+/cvmfs/geant4.cern.ch/share/data/G4NDL4.6
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic
+@@@ G4ParticleHPInelasticData instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4NDL4.6
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic/CrossSection/6_nat_Carbon
+@@@ G4ParticleHPInelasticData instantiated for particle proton data directory variable is G4PROTONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton
+NeutronHP: .3.2/Proton/Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic/CrossSection/8_17_Oxygen
+NeutronHP: .3.2/Proton/Inelastic file for Z = 78, A = 190 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic/CrossSection/79_197_Gold
+NeutronHP: .3.2/Proton/Inelastic file for Z = 78, A = 192 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic/CrossSection/79_197_Gold
+NeutronHP: .3.2/Proton/Inelastic file for Z = 78, A = 194 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic/CrossSection/79_197_Gold
+NeutronHP: .3.2/Proton/Inelastic file for Z = 78, A = 195 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic/CrossSection/79_197_Gold
+NeutronHP: .3.2/Proton/Inelastic file for Z = 78, A = 196 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic/CrossSection/79_197_Gold
+NeutronHP: .3.2/Proton/Inelastic file for Z = 78, A = 198 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic/CrossSection/79_197_Gold
+/cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton
+@@@ G4ParticleHPInelastic instantiated for particle proton data directory variable is G4PROTONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic
+The new beam current is the following : 3e-05 Ampere.
+The time of irradiation is now the following : 6 hour(s).
+The new diameter of the target is 6 mm.
+... Geometry is notified .... 
+The new thickness of the target is 0.6 mm.
+Position 1 = 185.82 -- Position 2 = 186.42
+... Geometry is notified .... 
+The new thickness of the foil is 0.32 mm.
+... Geometry is notified .... 
+Set file name: STCyclotron
+... Geometry is notified .... 
+... Geometry is notified .... 
+... Geometry is notified .... 
+Set file name: STCyclotron
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 0
+#
+/run/beamOn 10
+
+=======================================================
+======       ParticleHP Physics Parameters     ========
+=======================================================
+ UseOnlyPhotoEvaporation ? 0
+ SkipMissingIsotopes ?     0
+ NeglectDoppler ?          0
+ DoNotAdjustFinalState ?   0
+ ProduceFissionFragments ? 0
+ UseWendtFissionModel ?    0
+ UseNRESP71Model ?         0
+=======================================================
+
+@@@ G4ParticleHPInelastic instantiated for particle proton data directory variable is G4PROTONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4TENDL1.3.2/Proton/Inelastic
+======================================================================
+======          Radioactive Decay Physics Parameters           =======
+======================================================================
+Max life time                                     1.4427e+11 ps
+Internal e- conversion flag                       1
+Stored internal conversion coefficients           1
+Enable correlated gamma emission                  0
+Max 2J for sampling of angular correlations       10
+Atomic de-excitation enabled                      1
+Auger electron emission enabled                   1
+Auger cascade enabled                             1
+Check EM cuts disabled for atomic de-excitation   1
+Use Bearden atomic level energies                 0
+======================================================================
+
+=======================================================
+======       ParticleHP Physics Parameters     ========
+=======================================================
+ UseOnlyPhotoEvaporation ? 0
+ SkipMissingIsotopes ?     0
+ NeglectDoppler ?          0
+ DoNotAdjustFinalState ?   0
+ ProduceFissionFragments ? 0
+ UseWendtFissionModel ?    0
+ UseNRESP71Model ?         0
+=======================================================
+
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+
+Region <DefaultRegionForTheWorld> --  -- appears in <World> world volume
+ This region is in the mass world.
+ Root logical volume(s) : World 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_AIR G4_Al vacuumBeam helium G4_Pt 
+ Production cuts :   gamma 100 um      e- 100 um      e+ 100 um  proton 100 um 
+
+Region <DefaultRegionForParallelWorld> --  -- is not associated to any world.
+ Root logical volume(s) : 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : 
+ Production cuts :   gamma 100 um      e- 100 um      e+ 100 um  proton 100 um 
+
+Region <Target> --  -- appears in <World> world volume
+ This region is in the mass world.
+ Root logical volume(s) : Target 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_Ni 
+ Production cuts :   gamma 175 um      e- 175 um      e+ 175 um  proton 175 um 
+
+Region <Foil> --  -- appears in <World> world volume
+ This region is in the mass world.
+ Root logical volume(s) : Foil 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_Al 
+ Production cuts :   gamma 5 Ang     e- 5 Ang     e+ 5 Ang proton 5 Ang
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_Al
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  2.3478 keV    e-  131.031 keV    e+  128.416 keV proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes
+ Material : vacuumBeam
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes
+ Material : helium
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes
+ Material : G4_Pt
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  42.0872 keV    e-  376.336 keV    e+  361.464 keV proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 5     used in the geometry : Yes
+ Material : G4_Ni
+ Range cuts        :  gamma  175 um     e-  175 um     e+  175 um  proton 175 um 
+ Energy thresholds :  gamma  9.72569 keV    e-  376.336 keV    e+  361.464 keV proton 17.5 keV
+ Region(s) which use this couple : 
+    Target
+
+Index : 6     used in the geometry : Yes
+ Material : G4_Al
+ Range cuts        :  gamma  5 Ang    e-  5 Ang    e+  5 Ang proton 5 Ang
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 50 meV
+ Region(s) which use this couple : 
+    Foil
+
+==================================================================
+
+Start closing geometry.
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   1 kByte
+    Total CPU time elapsed for geometry optimisation: 0 seconds
+
+    Voxelisation: top CPU users:
+    Percent   Total CPU    System CPU       Memory  Volume
+    -------   ----------   ----------     --------  ----------
+       0.00         0.00         0.00            2k World
+
+    Voxelisation: top memory users:
+    Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
+    -------   --------     ------   ------   --------   ----------    ----------
+     100.00          1k         5       13         86         0.00    World
+### Run 0 starts.
+... create file : SolidTargetCyclotron.root - done
+... open analysis file : SolidTargetCyclotron.root - done
+ Run terminated.
+Run Summary
+  Number of events processed : 10
+  User=46.240000s Real=51.228833s Sys=0.080000s
+... write file : SolidTargetCyclotron.root - done
+... close file : SolidTargetCyclotron.root - done
+G4 kernel has come to Quit state.
+UserDetectorConstruction deleted.
+UserPhysicsList deleted.
+UserActionInitialization deleted.
+UserRunAction deleted.
+UserPrimaryGenerator deleted.
+RunManager is deleting RunManagerKernel.
+EventManager deleted.
+Units table cleared.
+TransportationManager deleted.
+Total navigation history collections cleaned: 11
+================== Deleting memory pools ===================
+Pool ID '20G4NavigationLevelRep', size : 0.0154 MB
+Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+Pool ID '7G4Event', size : 0.000961 MB
+Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+Pool ID '17G4PrimaryParticle', size : 0.258 MB
+Pool ID '17G4DynamicParticle', size : 0.525 MB
+Pool ID '7G4Track', size : 1.05 MB
+Pool ID '18G4TouchableHistory', size : 0.000961 MB
+Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+Pool ID '17G4ReactionProduct', size : 0.00192 MB
+Pool ID '10G4Fragment', size : 0.000961 MB
+Number of memory pools allocated: 11 of which, static: 0
+Dynamic pools deleted: 11 / Total memory freed: 1.9 MB
+============================================================
+G4Allocator objects are deleted.
+UImanager deleted.
+StateManager deleted.
+RunManagerKernel is deleted. Good bye :)

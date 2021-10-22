@@ -1,0 +1,2514 @@
+Environment variable "G4FORCE_RUN_MANAGER_TYPE" enabled with value == Serial. Forcing G4RunManager type...
+
+        ############################################
+        !!! WARNING - FPE detection is activated !!!
+        ############################################
+
+**************************************************************
+ Geant4 version Name: geant4-10-07-patch-02    (11-June-2021)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+  OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+  OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+  OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+  RayTracerX (RayTracerX)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+/control/saveHistory
+/run/verbose 1
+/control/execute physics_polarized_new.mac
+/physics/addPhysics Gamma_Polarized
+THE FOLLOWING ELECTROMAGNETIC PHYSICS LIST HAS BEEN ACTIVATED: G4EmStandardOption_4
+/physics/addPhysics HPElastic
+/physics/addPhysics binary
+THE FOLLOWING HADRONIC INELASTIC PHYSICS LIST HAS BEEN ACTIVATED: HadronPhysicsQGSP_BIC_HP()
+/physics/addPhysics binary_ion
+THE FOLLOWING HADRONIC INELASTIC PHYSICS LIST HAS BEEN ACTIVATED: G4IonBinaryCascadePhysics()
+/physics/addPhysics radioactive_decay
+THE FOLLOWING HADRONIC INELASTIC PHYSICS LIST HAS BEEN ACTIVATED: G4RadioactiveDecayPhysics()
+/run/initialize
+
+***** Table : Nb of materials = 10 *****
+
+ Material: Tungsten    density: 19.300 g/cm3   RadL:   3.504 mm   Nucl.Int.Length:  10.312 cm 
+                       Imean: 727.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: W (W)   Z = 74.0   N =   184   A = 183.842 g/mole
+         --->  Isotope:  W180   Z = 74   N = 180   A = 179.95 g/mole   abundance:  0.120 %
+         --->  Isotope:  W182   Z = 74   N = 182   A = 181.95 g/mole   abundance: 26.500 %
+         --->  Isotope:  W183   Z = 74   N = 183   A = 182.95 g/mole   abundance: 14.310 %
+         --->  Isotope:  W184   Z = 74   N = 184   A = 183.95 g/mole   abundance: 30.640 %
+         --->  Isotope:  W186   Z = 74   N = 186   A = 185.95 g/mole   abundance: 28.430 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material: Scintillator    density:  1.032 g/cm3   RadL:  42.549 cm   Nucl.Int.Length:  69.955 cm 
+                       Imean:  64.684 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Carbon (C)   Z =  6.0   N =    12   A = 12.010 g/mole
+         --->  Isotope:   C12   Z =  6   N =  12   A =  12.00 g/mole   abundance: 98.930 %
+         --->  Isotope:   C13   Z =  6   N =  13   A =  13.00 g/mole   abundance:  1.070 %
+          ElmMassFraction:  91.45 %  ElmAbundance  47.37 % 
+
+   --->  Element: Hydrogen (H)   Z =  1.0   N =     1   A =  1.010 g/mole
+         --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
+         --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
+          ElmMassFraction:   8.55 %  ElmAbundance  52.63 % 
+
+
+ Material: CesiumIodide    density:  4.530 g/cm3   RadL:   1.852 cm   Nucl.Int.Length:  39.132 cm 
+                       Imean: 489.470 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Cesium (Cs)   Z = 55.0   N =   133   A = 132.905 g/mole
+         --->  Isotope: Cs133   Z = 55   N = 133   A = 132.91 g/mole   abundance: 100.000 %
+          ElmMassFraction:  51.15 %  ElmAbundance  50.00 % 
+
+   --->  Element: Iodine (I)   Z = 53.0   N =   127   A = 126.904 g/mole
+         --->  Isotope:  I127   Z = 53   N = 127   A = 126.90 g/mole   abundance: 100.000 %
+          ElmMassFraction:  48.85 %  ElmAbundance  50.00 % 
+
+
+ Material:      Air    density:  1.290 mg/cm3  RadL: 285.049 m    Nucl.Int.Length: 662.595 m  
+                       Imean:  85.704 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Nitrogen (N)   Z =  7.0   N =    14   A = 14.006 g/mole
+         --->  Isotope:   N14   Z =  7   N =  14   A =  14.00 g/mole   abundance: 99.632 %
+         --->  Isotope:   N15   Z =  7   N =  15   A =  15.00 g/mole   abundance:  0.368 %
+          ElmMassFraction:  70.00 %  ElmAbundance  72.71 % 
+
+   --->  Element: Oxygen (O)   Z =  8.0   N =    16   A = 15.990 g/mole
+         --->  Isotope:   O16   Z =  8   N =  16   A =  15.99 g/mole   abundance: 99.757 %
+         --->  Isotope:   O17   Z =  8   N =  17   A =  17.00 g/mole   abundance:  0.038 %
+         --->  Isotope:   O18   Z =  8   N =  18   A =  18.00 g/mole   abundance:  0.205 %
+          ElmMassFraction:  30.00 %  ElmAbundance  27.29 % 
+
+
+ Material: Aluminum    density:  2.700 g/cm3   RadL:   8.893 cm   Nucl.Int.Length:  38.879 cm 
+                       Imean: 166.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Aluminum (Al)   Z = 13.0   N =    27   A = 26.980 g/mole
+         --->  Isotope:  Al27   Z = 13   N =  27   A =  26.98 g/mole   abundance: 100.000 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:  Silicon    density:  2.333 g/cm3   RadL:   9.356 cm   Nucl.Int.Length:  45.604 cm 
+                       Imean: 173.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Silicon (Si)   Z = 14.0   N =    28   A = 28.090 g/mole
+         --->  Isotope:  Si28   Z = 14   N =  28   A =  27.98 g/mole   abundance: 92.230 %
+         --->  Isotope:  Si29   Z = 14   N =  29   A =  28.98 g/mole   abundance:  4.683 %
+         --->  Isotope:  Si30   Z = 14   N =  30   A =  29.97 g/mole   abundance:  3.087 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Iron    density:  7.870 g/cm3   RadL:   1.758 cm   Nucl.Int.Length:  16.999 cm 
+                       Imean: 286.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Iron (Fe)   Z = 26.0   N =    56   A = 55.845 g/mole
+         --->  Isotope:  Fe54   Z = 26   N =  54   A =  53.94 g/mole   abundance:  5.845 %
+         --->  Isotope:  Fe56   Z = 26   N =  56   A =  55.93 g/mole   abundance: 91.754 %
+         --->  Isotope:  Fe57   Z = 26   N =  57   A =  56.94 g/mole   abundance:  2.119 %
+         --->  Isotope:  Fe58   Z = 26   N =  58   A =  57.93 g/mole   abundance:  0.282 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Lead    density: 11.350 g/cm3   RadL:   5.612 mm   Nucl.Int.Length:  18.247 cm 
+                       Imean: 823.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Lead (Pb)   Z = 82.0   N =   207   A = 207.190 g/mole
+         --->  Isotope: Pb204   Z = 82   N = 204   A = 203.97 g/mole   abundance:  1.400 %
+         --->  Isotope: Pb206   Z = 82   N = 206   A = 205.97 g/mole   abundance: 24.100 %
+         --->  Isotope: Pb207   Z = 82   N = 207   A = 206.98 g/mole   abundance: 22.100 %
+         --->  Isotope: Pb208   Z = 82   N = 208   A = 207.98 g/mole   abundance: 52.400 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material: Galactic    density:  0.000 mg/cm3  RadL: 204310098.490 pc   Nucl.Int.Length: 113427284.261 pc 
+                       Imean:  19.200 eV   temperature:   2.73 K  pressure:   0.00 atm
+
+   --->  Element: H (H)   Z =  1.0   N =     1   A =  1.008 g/mole
+         --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
+         --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Beam    density:  0.010 mg/cm3  RadL:  36.771 km   Nucl.Int.Length:  85.475 km 
+                       Imean:  85.704 eV   temperature: 273.15 K  pressure:   0.02 atm
+
+   --->  Element: Nitrogen (N)   Z =  7.0   N =    14   A = 14.006 g/mole
+         --->  Isotope:   N14   Z =  7   N =  14   A =  14.00 g/mole   abundance: 99.632 %
+         --->  Isotope:   N15   Z =  7   N =  15   A =  15.00 g/mole   abundance:  0.368 %
+          ElmMassFraction:  70.00 %  ElmAbundance  72.71 % 
+
+   --->  Element: Oxygen (O)   Z =  8.0   N =    16   A = 15.990 g/mole
+         --->  Isotope:   O16   Z =  8   N =  16   A =  15.99 g/mole   abundance: 99.757 %
+         --->  Isotope:   O17   Z =  8   N =  17   A =  17.00 g/mole   abundance:  0.038 %
+         --->  Isotope:   O18   Z =  8   N =  18   A =  18.00 g/mole   abundance:  0.205 %
+          ElmMassFraction:  30.00 %  ElmAbundance  27.29 % 
+
+
+
+
+------------------------------------------------------------
+---> The Tracker is 15 layers of:  0.3mm of Tungsten
+------------------------------------------------------------
+2 LAT 
+1 TOP 
+### G4EmConfigurator::AddModels n= 0
+/cvmfs/geant4.cern.ch/share/data/G4NDL4.6
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic
+@@@ G4ParticleHPInelasticData instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4NDL4.6
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic/CrossSection/6_nat_Carbon
+PhysicsList::SetCuts:CutLength : 100 um 
+/gun/sourceGen true
+/gun/particle gamma
+/gun/vertexRadius 25. cm
+/gun/polarization 1 0 0
+/gun/energy 10 MeV
+/gun/sourceType 2
+/payload/setConvMat Silicon
+
+------------------------------------------------------------
+---> The Tracker is 15 layers of:  0.3mm of Silicon
+------------------------------------------------------------
+/payload/setConvThick 1 micrometer
+/payload/setNbOfTKRLayers 25
+/payload/setNbOfCALLayers 2
+/payload/update
+
+------------------------------------------------------------
+---> The Tracker is 25 layers of:  0.001mm of Silicon
+------------------------------------------------------------
+/run/reinitializeGeometry
+/run/beamOn 100
+Start re-initialization because 
+  Geometry
+has been modified since last Run.
+G4Material WARNING: duplicate name of material Tungsten
+G4Material WARNING: duplicate name of material Scintillator
+G4Material WARNING: duplicate name of material CesiumIodide
+G4Material WARNING: duplicate name of material Air
+G4Material WARNING: duplicate name of material Aluminum
+G4Material WARNING: duplicate name of material Silicon
+G4Material WARNING: duplicate name of material Iron
+G4Material WARNING: duplicate name of material Lead
+G4Material WARNING: duplicate name of material Galactic
+G4Material WARNING: duplicate name of material Beam
+
+***** Table : Nb of materials = 20 *****
+
+ Material: Tungsten    density: 19.300 g/cm3   RadL:   3.504 mm   Nucl.Int.Length:  10.312 cm 
+                       Imean: 727.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: W (W)   Z = 74.0   N =   184   A = 183.842 g/mole
+         --->  Isotope:  W180   Z = 74   N = 180   A = 179.95 g/mole   abundance:  0.120 %
+         --->  Isotope:  W182   Z = 74   N = 182   A = 181.95 g/mole   abundance: 26.500 %
+         --->  Isotope:  W183   Z = 74   N = 183   A = 182.95 g/mole   abundance: 14.310 %
+         --->  Isotope:  W184   Z = 74   N = 184   A = 183.95 g/mole   abundance: 30.640 %
+         --->  Isotope:  W186   Z = 74   N = 186   A = 185.95 g/mole   abundance: 28.430 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material: Scintillator    density:  1.032 g/cm3   RadL:  42.549 cm   Nucl.Int.Length:  69.955 cm 
+                       Imean:  64.684 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Carbon (C)   Z =  6.0   N =    12   A = 12.010 g/mole
+         --->  Isotope:   C12   Z =  6   N =  12   A =  12.00 g/mole   abundance: 98.930 %
+         --->  Isotope:   C13   Z =  6   N =  13   A =  13.00 g/mole   abundance:  1.070 %
+          ElmMassFraction:  91.45 %  ElmAbundance  47.37 % 
+
+   --->  Element: Hydrogen (H)   Z =  1.0   N =     1   A =  1.010 g/mole
+         --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
+         --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
+          ElmMassFraction:   8.55 %  ElmAbundance  52.63 % 
+
+
+ Material: CesiumIodide    density:  4.530 g/cm3   RadL:   1.852 cm   Nucl.Int.Length:  39.132 cm 
+                       Imean: 489.470 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Cesium (Cs)   Z = 55.0   N =   133   A = 132.905 g/mole
+         --->  Isotope: Cs133   Z = 55   N = 133   A = 132.91 g/mole   abundance: 100.000 %
+          ElmMassFraction:  51.15 %  ElmAbundance  50.00 % 
+
+   --->  Element: Iodine (I)   Z = 53.0   N =   127   A = 126.904 g/mole
+         --->  Isotope:  I127   Z = 53   N = 127   A = 126.90 g/mole   abundance: 100.000 %
+          ElmMassFraction:  48.85 %  ElmAbundance  50.00 % 
+
+
+ Material:      Air    density:  1.290 mg/cm3  RadL: 285.049 m    Nucl.Int.Length: 662.595 m  
+                       Imean:  85.704 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Nitrogen (N)   Z =  7.0   N =    14   A = 14.006 g/mole
+         --->  Isotope:   N14   Z =  7   N =  14   A =  14.00 g/mole   abundance: 99.632 %
+         --->  Isotope:   N15   Z =  7   N =  15   A =  15.00 g/mole   abundance:  0.368 %
+          ElmMassFraction:  70.00 %  ElmAbundance  72.71 % 
+
+   --->  Element: Oxygen (O)   Z =  8.0   N =    16   A = 15.990 g/mole
+         --->  Isotope:   O16   Z =  8   N =  16   A =  15.99 g/mole   abundance: 99.757 %
+         --->  Isotope:   O17   Z =  8   N =  17   A =  17.00 g/mole   abundance:  0.038 %
+         --->  Isotope:   O18   Z =  8   N =  18   A =  18.00 g/mole   abundance:  0.205 %
+          ElmMassFraction:  30.00 %  ElmAbundance  27.29 % 
+
+
+ Material: Aluminum    density:  2.700 g/cm3   RadL:   8.893 cm   Nucl.Int.Length:  38.879 cm 
+                       Imean: 166.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Aluminum (Al)   Z = 13.0   N =    27   A = 26.980 g/mole
+         --->  Isotope:  Al27   Z = 13   N =  27   A =  26.98 g/mole   abundance: 100.000 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:  Silicon    density:  2.333 g/cm3   RadL:   9.356 cm   Nucl.Int.Length:  45.604 cm 
+                       Imean: 173.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Silicon (Si)   Z = 14.0   N =    28   A = 28.090 g/mole
+         --->  Isotope:  Si28   Z = 14   N =  28   A =  27.98 g/mole   abundance: 92.230 %
+         --->  Isotope:  Si29   Z = 14   N =  29   A =  28.98 g/mole   abundance:  4.683 %
+         --->  Isotope:  Si30   Z = 14   N =  30   A =  29.97 g/mole   abundance:  3.087 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Iron    density:  7.870 g/cm3   RadL:   1.758 cm   Nucl.Int.Length:  16.999 cm 
+                       Imean: 286.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Iron (Fe)   Z = 26.0   N =    56   A = 55.845 g/mole
+         --->  Isotope:  Fe54   Z = 26   N =  54   A =  53.94 g/mole   abundance:  5.845 %
+         --->  Isotope:  Fe56   Z = 26   N =  56   A =  55.93 g/mole   abundance: 91.754 %
+         --->  Isotope:  Fe57   Z = 26   N =  57   A =  56.94 g/mole   abundance:  2.119 %
+         --->  Isotope:  Fe58   Z = 26   N =  58   A =  57.93 g/mole   abundance:  0.282 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Lead    density: 11.350 g/cm3   RadL:   5.612 mm   Nucl.Int.Length:  18.247 cm 
+                       Imean: 823.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Lead (Pb)   Z = 82.0   N =   207   A = 207.190 g/mole
+         --->  Isotope: Pb204   Z = 82   N = 204   A = 203.97 g/mole   abundance:  1.400 %
+         --->  Isotope: Pb206   Z = 82   N = 206   A = 205.97 g/mole   abundance: 24.100 %
+         --->  Isotope: Pb207   Z = 82   N = 207   A = 206.98 g/mole   abundance: 22.100 %
+         --->  Isotope: Pb208   Z = 82   N = 208   A = 207.98 g/mole   abundance: 52.400 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material: Galactic    density:  0.000 mg/cm3  RadL: 204310098.490 pc   Nucl.Int.Length: 113427284.261 pc 
+                       Imean:  19.200 eV   temperature:   2.73 K  pressure:   0.00 atm
+
+   --->  Element: H (H)   Z =  1.0   N =     1   A =  1.008 g/mole
+         --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
+         --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Beam    density:  0.010 mg/cm3  RadL:  36.771 km   Nucl.Int.Length:  85.475 km 
+                       Imean:  85.704 eV   temperature: 273.15 K  pressure:   0.02 atm
+
+   --->  Element: Nitrogen (N)   Z =  7.0   N =    14   A = 14.006 g/mole
+         --->  Isotope:   N14   Z =  7   N =  14   A =  14.00 g/mole   abundance: 99.632 %
+         --->  Isotope:   N15   Z =  7   N =  15   A =  15.00 g/mole   abundance:  0.368 %
+          ElmMassFraction:  70.00 %  ElmAbundance  72.71 % 
+
+   --->  Element: Oxygen (O)   Z =  8.0   N =    16   A = 15.990 g/mole
+         --->  Isotope:   O16   Z =  8   N =  16   A =  15.99 g/mole   abundance: 99.757 %
+         --->  Isotope:   O17   Z =  8   N =  17   A =  17.00 g/mole   abundance:  0.038 %
+         --->  Isotope:   O18   Z =  8   N =  18   A =  18.00 g/mole   abundance:  0.205 %
+          ElmMassFraction:  30.00 %  ElmAbundance  27.29 % 
+
+
+ Material: Tungsten    density: 19.300 g/cm3   RadL:   3.504 mm   Nucl.Int.Length:  10.312 cm 
+                       Imean: 727.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: W (W)   Z = 74.0   N =   184   A = 183.842 g/mole
+         --->  Isotope:  W180   Z = 74   N = 180   A = 179.95 g/mole   abundance:  0.120 %
+         --->  Isotope:  W182   Z = 74   N = 182   A = 181.95 g/mole   abundance: 26.500 %
+         --->  Isotope:  W183   Z = 74   N = 183   A = 182.95 g/mole   abundance: 14.310 %
+         --->  Isotope:  W184   Z = 74   N = 184   A = 183.95 g/mole   abundance: 30.640 %
+         --->  Isotope:  W186   Z = 74   N = 186   A = 185.95 g/mole   abundance: 28.430 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material: Scintillator    density:  1.032 g/cm3   RadL:  42.549 cm   Nucl.Int.Length:  69.955 cm 
+                       Imean:  64.684 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Carbon (C)   Z =  6.0   N =    12   A = 12.010 g/mole
+         --->  Isotope:   C12   Z =  6   N =  12   A =  12.00 g/mole   abundance: 98.930 %
+         --->  Isotope:   C13   Z =  6   N =  13   A =  13.00 g/mole   abundance:  1.070 %
+          ElmMassFraction:  91.45 %  ElmAbundance  47.37 % 
+
+   --->  Element: Hydrogen (H)   Z =  1.0   N =     1   A =  1.010 g/mole
+         --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
+         --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
+          ElmMassFraction:   8.55 %  ElmAbundance  52.63 % 
+
+
+ Material: CesiumIodide    density:  4.530 g/cm3   RadL:   1.852 cm   Nucl.Int.Length:  39.132 cm 
+                       Imean: 489.470 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Cesium (Cs)   Z = 55.0   N =   133   A = 132.905 g/mole
+         --->  Isotope: Cs133   Z = 55   N = 133   A = 132.91 g/mole   abundance: 100.000 %
+          ElmMassFraction:  51.15 %  ElmAbundance  50.00 % 
+
+   --->  Element: Iodine (I)   Z = 53.0   N =   127   A = 126.904 g/mole
+         --->  Isotope:  I127   Z = 53   N = 127   A = 126.90 g/mole   abundance: 100.000 %
+          ElmMassFraction:  48.85 %  ElmAbundance  50.00 % 
+
+
+ Material:      Air    density:  1.290 mg/cm3  RadL: 285.049 m    Nucl.Int.Length: 662.595 m  
+                       Imean:  85.704 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Nitrogen (N)   Z =  7.0   N =    14   A = 14.006 g/mole
+         --->  Isotope:   N14   Z =  7   N =  14   A =  14.00 g/mole   abundance: 99.632 %
+         --->  Isotope:   N15   Z =  7   N =  15   A =  15.00 g/mole   abundance:  0.368 %
+          ElmMassFraction:  70.00 %  ElmAbundance  72.71 % 
+
+   --->  Element: Oxygen (O)   Z =  8.0   N =    16   A = 15.990 g/mole
+         --->  Isotope:   O16   Z =  8   N =  16   A =  15.99 g/mole   abundance: 99.757 %
+         --->  Isotope:   O17   Z =  8   N =  17   A =  17.00 g/mole   abundance:  0.038 %
+         --->  Isotope:   O18   Z =  8   N =  18   A =  18.00 g/mole   abundance:  0.205 %
+          ElmMassFraction:  30.00 %  ElmAbundance  27.29 % 
+
+
+ Material: Aluminum    density:  2.700 g/cm3   RadL:   8.893 cm   Nucl.Int.Length:  38.879 cm 
+                       Imean: 166.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Aluminum (Al)   Z = 13.0   N =    27   A = 26.980 g/mole
+         --->  Isotope:  Al27   Z = 13   N =  27   A =  26.98 g/mole   abundance: 100.000 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:  Silicon    density:  2.333 g/cm3   RadL:   9.356 cm   Nucl.Int.Length:  45.604 cm 
+                       Imean: 173.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Silicon (Si)   Z = 14.0   N =    28   A = 28.090 g/mole
+         --->  Isotope:  Si28   Z = 14   N =  28   A =  27.98 g/mole   abundance: 92.230 %
+         --->  Isotope:  Si29   Z = 14   N =  29   A =  28.98 g/mole   abundance:  4.683 %
+         --->  Isotope:  Si30   Z = 14   N =  30   A =  29.97 g/mole   abundance:  3.087 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Iron    density:  7.870 g/cm3   RadL:   1.758 cm   Nucl.Int.Length:  16.999 cm 
+                       Imean: 286.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Iron (Fe)   Z = 26.0   N =    56   A = 55.845 g/mole
+         --->  Isotope:  Fe54   Z = 26   N =  54   A =  53.94 g/mole   abundance:  5.845 %
+         --->  Isotope:  Fe56   Z = 26   N =  56   A =  55.93 g/mole   abundance: 91.754 %
+         --->  Isotope:  Fe57   Z = 26   N =  57   A =  56.94 g/mole   abundance:  2.119 %
+         --->  Isotope:  Fe58   Z = 26   N =  58   A =  57.93 g/mole   abundance:  0.282 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Lead    density: 11.350 g/cm3   RadL:   5.612 mm   Nucl.Int.Length:  18.247 cm 
+                       Imean: 823.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+
+   --->  Element: Lead (Pb)   Z = 82.0   N =   207   A = 207.190 g/mole
+         --->  Isotope: Pb204   Z = 82   N = 204   A = 203.97 g/mole   abundance:  1.400 %
+         --->  Isotope: Pb206   Z = 82   N = 206   A = 205.97 g/mole   abundance: 24.100 %
+         --->  Isotope: Pb207   Z = 82   N = 207   A = 206.98 g/mole   abundance: 22.100 %
+         --->  Isotope: Pb208   Z = 82   N = 208   A = 207.98 g/mole   abundance: 52.400 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material: Galactic    density:  0.000 mg/cm3  RadL: 204310098.490 pc   Nucl.Int.Length: 113427284.261 pc 
+                       Imean:  19.200 eV   temperature:   2.73 K  pressure:   0.00 atm
+
+   --->  Element: H (H)   Z =  1.0   N =     1   A =  1.008 g/mole
+         --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
+         --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
+          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
+
+
+ Material:     Beam    density:  0.010 mg/cm3  RadL:  36.771 km   Nucl.Int.Length:  85.475 km 
+                       Imean:  85.704 eV   temperature: 273.15 K  pressure:   0.02 atm
+
+   --->  Element: Nitrogen (N)   Z =  7.0   N =    14   A = 14.006 g/mole
+         --->  Isotope:   N14   Z =  7   N =  14   A =  14.00 g/mole   abundance: 99.632 %
+         --->  Isotope:   N15   Z =  7   N =  15   A =  15.00 g/mole   abundance:  0.368 %
+          ElmMassFraction:  70.00 %  ElmAbundance  72.71 % 
+
+   --->  Element: Oxygen (O)   Z =  8.0   N =    16   A = 15.990 g/mole
+         --->  Isotope:   O16   Z =  8   N =  16   A =  15.99 g/mole   abundance: 99.757 %
+         --->  Isotope:   O17   Z =  8   N =  17   A =  17.00 g/mole   abundance:  0.038 %
+         --->  Isotope:   O18   Z =  8   N =  18   A =  18.00 g/mole   abundance:  0.205 %
+          ElmMassFraction:  30.00 %  ElmAbundance  27.29 % 
+
+
+
+
+------------------------------------------------------------
+---> The Tracker is 25 layers of:  0.001mm of Tungsten
+------------------------------------------------------------
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld  1  1  0
+### ===  Auger cascade flag: 1
+### ===  Ignore cuts flag:   1
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 174 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 20 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 160 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LowEPComptonModel : Emin=    0 eV  Emax=   20 MeV Fluo
+        KleinNishina : Emin=   20 MeV Emax=  100 TeV Fluo
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+      BetheHeitler5D : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 20 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 180 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  GoudsmitSaunderson : Emin=    0 eV  Emax=  100 MeV Nbins=120 100 eV  - 100 MeV
+              StepLim=SafetyPlus Rfact=0.08 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=120 100 MeV - 100 TeV
+              StepLim=SafetyPlus Rfact=0.08 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+eIoni:  for e-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.2, 0.01 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       LowEnergyIoni : Emin=    0 eV  Emax=  100 keV  deltaVI
+        MollerBhabha : Emin=  100 keV Emax=  100 TeV  deltaVI
+
+eBrem:  for e-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  AngularGen2BS
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  AngularGen2BS
+
+ePairProd:  for e-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 25x1001 from 0.1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           ePairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for e-, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  GoudsmitSaunderson : Emin=    0 eV  Emax=  100 MeV Nbins=120 100 eV  - 100 MeV
+              StepLim=SafetyPlus Rfact=0.08 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=120 100 MeV - 100 TeV
+              StepLim=SafetyPlus Rfact=0.08 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+eIoni:  for e+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.2, 0.01 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             PenIoni : Emin=    0 eV  Emax=  100 keV
+        MollerBhabha : Emin=  100 keV Emax=  100 TeV  deltaVI
+
+eBrem:  for e+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  AngularGen2BS
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  AngularGen2BS
+
+ePairProd:  for e+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 25x1001 from 0.1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           ePairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+annihil:  for e+, integral:1  SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV  deltaVI
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV  deltaVI
+
+hBrems:  for proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:  for proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 17x1001 from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+nuclearStopping:  for proton SubType=8 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping : Emin=    0 eV  Emax=    1 MeV
+
+msc:  for GenericIon  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+ionIoni:  for GenericIon  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.02 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+         ParamICRU73 : Emin=    0 eV  Emax=  100 TeV  deltaVI
+
+nuclearStopping:  for GenericIon SubType=8 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping : Emin=    0 eV  Emax=    1 MeV
+======================================================================
+======          Radioactive Decay Physics Parameters           =======
+======================================================================
+Max life time                                     1.4427e+06 ps
+Internal e- conversion flag                       1
+Stored internal conversion coefficients           1
+Enable correlated gamma emission                  0
+Max 2J for sampling of angular correlations       10
+Atomic de-excitation enabled                      1
+Auger electron emission enabled                   1
+Auger cascade enabled                             1
+Check EM cuts disabled for atomic de-excitation   1
+Use Bearden atomic level energies                 0
+======================================================================
+
+msc:  for alpha  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+ionIoni:  for alpha  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.02 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV  deltaVI
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV  deltaVI
+
+nuclearStopping:  for alpha SubType=8 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   ICRU49NucStopping : Emin=    0 eV  Emax=    1 MeV
+
+msc:  for anti_proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for anti_proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV  deltaVI
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV  deltaVI
+
+hBrems:  for anti_proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:  for anti_proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 17x1001 from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for anti_proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for kaon+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV  deltaVI
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV  deltaVI
+
+hBrems:  for kaon+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:  for kaon+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 18x1001 from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for kaon-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV  deltaVI
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV  deltaVI
+
+hBrems:  for kaon-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:  for kaon-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 18x1001 from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+muIoni:  for mu+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV  deltaVI
+          BetheBloch : Emin=  200 keV Emax=    1 GeV  deltaVI
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+      ===== Limit on energy threshold has been applied 
+
+muPairProd:  for mu+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 21x1001 from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+muIoni:  for mu-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV  deltaVI
+          BetheBloch : Emin=  200 keV Emax=    1 GeV  deltaVI
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+      ===== Limit on energy threshold has been applied 
+
+muPairProd:  for mu-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 21x1001 from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic/CrossSection/6_nat_Carbon
+
+=======================================================
+======       ParticleHP Physics Parameters     ========
+=======================================================
+ UseOnlyPhotoEvaporation ? 0
+ SkipMissingIsotopes ?     0
+ NeglectDoppler ?          0
+ DoNotAdjustFinalState ?   0
+ ProduceFissionFragments ? 0
+ UseWendtFissionModel ?    0
+ UseNRESP71Model ?         0
+=======================================================
+
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Inelastic
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/geant4.cern.ch/share/data/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+
+msc:  for pi+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for pi+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV  deltaVI
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV  deltaVI
+
+hBrems:  for pi+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:  for pi+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 20x1001 from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 20 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=240 100 eV  - 100 TeV
+              StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=3 Llimit=1
+
+hIoni:  for pi-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      StepFunction=(0.1, 0.05 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV  deltaVI
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV  deltaVI
+
+hBrems:  for pi-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+      ===== Limit on energy threshold has been applied 
+
+hPairProd:  for pi-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 240 bins
+      Lambda tables from threshold to 100 TeV, 20 bins/decade, spline: 1
+      Sampling table 20x1001 from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180 pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: RadioactiveDecayBase
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: anti_lambdaInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 0 eV  ---> 25 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 19.5 MeV ---> 100 TeV
+        Model:          NeutronHPElastic: 0 eV  ---> 20 MeV
+     Cr_sctns:        NeutronHPElasticXS: 0 eV  ---> 20 MeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            Binary Cascade: 19.9 MeV ---> 6 GeV
+        Model:        NeutronHPInelastic: 0 eV  ---> 20 MeV
+     Cr_sctns:      NeutronHPInelasticXS: 0 eV  ---> 20 MeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:          NeutronHPCapture: 0 eV  ---> 20 MeV
+        Model:               nRadCapture: 19.9 MeV ---> 100 TeV
+     Cr_sctns:        NeutronHPCaptureXS: 0 eV  ---> 20 MeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nFission
+        Model:          NeutronHPFission: 0 eV  ---> 20 MeV
+        Model:                G4LFission: 19.9 MeV ---> 100 TeV
+     Cr_sctns:        NeutronHPFissionXS: 0 eV  ---> 20 MeV
+     Cr_sctns:          GheishaFissionXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            Binary Cascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for sigma-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: sigma-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 3 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1442.7
+Isomer production flag                              1
+Internal e- conversion flag                         1
+Store e- internal conversion data                   1
+Electron internal conversion ID                     0
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+=======================================================================
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : Galactic
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  250 eV     e-  250 eV     e+  250 eV  proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : CesiumIodide
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  9.24411 keV    e-  145.079 keV    e+  140.395 keV proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes
+ Material : Silicon
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  2.32918 keV    e-  122.227 keV    e+  119.582 keV proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes
+ Material : Tungsten
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  36.157 keV    e-  351.933 keV    e+  336.864 keV proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes
+ Material : Scintillator
+ Range cuts        :  gamma  100 um     e-  100 um     e+  100 um  proton 100 um 
+ Energy thresholds :  gamma  984.997 eV     e-  86.7551 keV    e+  84.8775 keV proton 10 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+==================================================================
+
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+### Run 0 starts.
+### Run 0 starts (master).
+/vis/scene/notifyHandlers
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+Opening output file gammaraytel ...  done
+Using G4ParticleGun ... 
+8.53858 LIN
+gamma
+Event: 0
+Number of tracker hits in this event =  34
+      0 98.5062 1476 8 1 115.401 123.651 -170.169 
+      0 274.932 1517 8 0 115.401 123.651 -171.35 
+      0 233.524 1476 7 1 115.405 123.651 -199.95 
+      0 237.995 1517 7 0 115.405 123.651 -201.35 
+      0 250.978 1476 6 1 115.409 123.651 -229.95 
+      0 322.135 1517 6 0 115.409 123.651 -231.35 
+      0 264.244 1476 5 1 115.406 123.65 -259.95 
+      0 316.997 1517 5 0 115.405 123.65 -261.35 
+      0 261.872 1476 4 1 115.403 123.641 -289.95 
+      0 401.515 1517 4 0 115.403 123.641 -291.35 
+      0 159.074 1476 3 1 115.39 123.635 -319.95 
+      0 292.569 1517 3 0 115.39 123.635 -321.35 
+      0 282.596 1476 2 1 115.381 123.627 -349.95 
+      0 311.743 1517 2 0 115.38 123.626 -351.35 
+      0 112.009 1476 1 1 115.358 123.613 -379.95 
+      0 236.228 1517 1 0 115.357 123.612 -381.35 
+      0 265.831 1475 0 1 115.339 123.593 -409.95 
+      0 140.343 1517 0 0 115.338 123.592 -411.35 
+      0 92.425 1518 5 0 115.456 123.75 -261.485 
+      0 66.646 1519 5 0 115.464 123.95 -261.57 
+      0 128.823 1520 5 0 115.462 124.151 -261.682 
+      0 52.8227 1586 4 1 137.503 146.731 -289.95 
+      0 69.6169 1587 4 1 137.55 146.778 -290.065 
+      0 97.8649 1475 3 1 115.348 123.626 -319.95 
+      0 180.384 1475 2 1 115.319 123.601 -349.95 
+      0 141.074 1475 1 1 115.281 123.569 -379.95 
+      0 154.546 1516 0 0 115.244 123.536 -411.35 
+      0 42.0936 1281 0 0 86.1921 76.45 -411.62 
+      0 2.72822 1280 0 0 86.0175 76.25 -411.358 
+      0 207.043 1318 0 1 83.8168 76.7513 -410.35 
+      0 133.519 1476 0 1 115.35 123.469 -410.127 
+      0 166.549 1669 1 0 98.5434 154.038 -381.75 
+      0 89.4891 1516 6 0 115.446 123.549 -231.564 
+      0 246.293 1515 6 0 115.483 123.35 -231.467 
+Number of digits in this event =  26
+Using G4ParticleGun ... 
+3.73029 LIN
+gamma
+Event: 1
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+9.69203 LIN
+gamma
+Event: 2
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+8.29221 LIN
+gamma
+Event: 3
+Number of tracker hits in this event =  6
+      3 152.249 634 2 0 -6.67364 -53.1926 -351.75 
+      3 106.14 870 2 1 -6.04117 -52.0947 -350.35 
+      3 270.982 869 2 1 -6.05 -51.9791 -350.225 
+      3 82.9123 1539 24 1 128.047 -8.85851 309.65 
+      3 136.979 970 0 0 -51.9738 14.05 -411.737 
+      3 195.05 639 0 1 -52.1094 14.1985 -410.35 
+Number of digits in this event =  6
+Using G4ParticleGun ... 
+3.91504 LIN
+gamma
+Event: 4
+Number of tracker hits in this event =  56
+      4 53.4732 1735 14 0 104.761 167.209 8.35067 
+      4 105.021 1422 13 1 104.627 167.258 -19.95 
+      4 280.134 1735 13 0 104.619 167.262 -21.35 
+      4 151.701 1421 12 1 104.516 167.255 -49.95 
+      4 243.701 1735 12 0 104.511 167.253 -51.35 
+      4 108.837 1421 11 1 104.547 167.246 -79.95 
+      4 293.001 1735 11 0 104.542 167.25 -81.35 
+      4 86.5598 1421 10 1 104.396 167.361 -109.95 
+      4 105.098 1736 10 0 104.391 167.367 -111.35 
+      4 109.859 1420 9 1 104.257 167.459 -139.95 
+      4 164.722 1736 9 0 104.253 167.46 -141.35 
+      4 133.327 1421 8 1 104.375 167.36 -169.95 
+      4 124.86 1736 8 0 104.38 167.354 -171.35 
+      4 112.43 1421 7 1 104.507 167.224 -199.95 
+      4 283.087 1735 7 0 104.506 167.218 -201.35 
+      4 123.427 1421 6 1 104.406 167.073 -229.95 
+      4 104.891 1734 6 0 104.404 167.066 -231.35 
+      4 179.68 1421 5 1 104.375 166.872 -259.95 
+      4 107.962 1733 5 0 104.376 166.863 -261.35 
+      4 131.947 1421 4 1 104.359 166.699 -289.95 
+      4 142.477 1732 4 0 104.355 166.692 -291.35 
+      4 142.039 1420 3 1 104.239 166.523 -319.95 
+      4 140.787 1731 3 0 104.234 166.513 -321.35 
+      4 108.012 1419 2 1 103.986 166.261 -349.95 
+      4 125.974 1730 2 0 103.977 166.252 -351.35 
+      4 154.655 1418 1 1 103.871 166.196 -379.95 
+      4 222.528 1730 1 0 103.863 166.194 -381.35 
+      4 122.766 1417 0 1 103.706 166.228 -409.95 
+      4 195.547 1730 0 0 103.699 166.231 -411.35 
+      4 109.949 1738 0 0 117.762 167.864 -411.75 
+      4 119.642 1423 13 1 104.781 167.204 -19.95 
+      4 186.737 1423 12 1 104.805 167.196 -49.95 
+      4 160.561 1423 11 1 104.838 167.198 -79.95 
+      4 122.347 1423 10 1 104.869 167.205 -109.95 
+      4 155.6 1735 10 0 104.87 167.206 -111.35 
+      4 162.693 1423 9 1 104.903 167.221 -139.95 
+      4 194.228 1735 9 0 104.904 167.222 -141.35 
+      4 183.583 1423 8 1 104.938 167.227 -169.95 
+      4 311.825 1735 8 0 104.94 167.228 -171.35 
+      4 356.35 1424 7 1 104.964 167.228 -199.95 
+      4 126.6 1424 6 1 104.984 167.236 -229.95 
+      4 98.2779 1735 6 0 104.985 167.236 -231.35 
+      4 140.492 1424 5 1 104.993 167.242 -259.95 
+      4 223.893 1735 5 0 104.993 167.242 -261.35 
+      4 94.5406 1424 4 1 105.008 167.24 -289.95 
+      4 128.915 1735 4 0 105.009 167.24 -291.35 
+      4 221.399 1424 3 1 105.033 167.227 -319.95 
+      4 122.047 1735 3 0 105.035 167.226 -321.35 
+      4 100.007 1424 2 1 105.066 167.206 -349.95 
+      4 125.957 1735 2 0 105.067 167.206 -351.35 
+      4 218.724 1424 1 1 105.095 167.2 -379.95 
+      4 96.7308 1735 1 0 105.097 167.2 -381.35 
+      4 121.236 1424 0 1 105.122 167.196 -409.95 
+      4 166.155 1735 0 0 105.123 167.195 -411.35 
+      4 609.937 1443 4 1 108.838 165.848 -289.95 
+      4 43.9286 1442 4 1 108.75 165.725 -290.169 
+Number of digits in this event =  42
+Using G4ParticleGun ... 
+5.09765 LIN
+gamma
+Event: 5
+Number of tracker hits in this event =  6
+      5 96.9964 126 13 0 102.828 -154.912 -21.75 
+      5 36.8296 125 13 0 102.945 -154.95 -21.6382 
+      5 206.654 585 1 0 22.8631 -63.0027 -381.75 
+      5 44.4671 412 0 1 -97.5554 -53.9858 -410.35 
+      5 171.129 425 1 1 -95.1147 67.6465 -380.35 
+      5 74.6068 429 1 1 -94.35 67.5924 -380.084 
+Number of digits in this event =  5
+Using G4ParticleGun ... 
+2.37557 LIN
+gamma
+Event: 6
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+2.09793 LIN
+gamma
+Event: 7
+Number of tracker hits in this event =  78
+      7 228.07 1739 18 1 167.987 -51.0434 129.996 
+      7 230.687 645 18 0 167.988 -51.0422 128.65 
+      7 180.189 1739 17 1 168.029 -51.034 100.05 
+      7 128.522 645 17 0 168.031 -51.0337 98.65 
+      7 105.049 1739 16 1 168.082 -51.0405 70.05 
+      7 120.232 645 16 0 168.086 -51.0387 68.65 
+      7 172.793 1740 15 1 168.204 -50.9714 40.05 
+      7 130.843 645 15 0 168.21 -50.968 38.65 
+      7 157.843 1740 14 1 168.326 -50.9102 10.05 
+      7 133.267 645 14 0 168.332 -50.9073 8.65 
+      7 119.711 1741 13 1 168.46 -50.8298 -19.95 
+      7 116.601 646 13 0 168.467 -50.8259 -21.35 
+      7 114.863 1742 12 1 168.611 -50.7621 -49.95 
+      7 121.782 646 12 0 168.618 -50.7596 -51.35 
+      7 180.307 1743 11 1 168.759 -50.7096 -79.95 
+      7 120.869 646 11 0 168.765 -50.7078 -81.35 
+      7 137.986 1743 10 1 168.872 -50.6518 -109.95 
+      7 124.627 647 10 0 168.877 -50.6488 -111.35 
+      7 118.265 1744 9 1 169.002 -50.5792 -139.95 
+      7 352.361 647 9 0 169.008 -50.5757 -141.35 
+      7 158.211 1744 8 1 169.108 -50.4983 -169.95 
+      7 120.216 647 8 0 169.113 -50.4952 -171.35 
+      7 110.928 1745 7 1 169.197 -50.4448 -199.95 
+      7 223.713 648 7 0 169.201 -50.4424 -201.35 
+      7 112.31 1745 6 1 169.273 -50.4037 -229.95 
+      7 114.343 648 6 0 169.277 -50.4018 -231.35 
+      7 142.713 1746 5 1 169.376 -50.3746 -259.95 
+      7 232.358 648 5 0 169.381 -50.3733 -261.35 
+      7 118.759 1746 4 1 169.466 -50.3423 -289.95 
+      7 112.049 648 4 0 169.469 -50.3409 -291.35 
+      7 108.848 1746 3 1 169.536 -50.3081 -319.95 
+      7 169.797 648 3 0 169.54 -50.3065 -321.35 
+      7 188.898 1747 2 1 169.607 -50.2845 -349.95 
+      7 123.316 648 2 0 169.611 -50.2839 -351.35 
+      7 123.468 1747 1 1 169.661 -50.2696 -379.95 
+      7 161.388 648 1 0 169.664 -50.2686 -381.35 
+      7 109.556 1747 0 1 169.724 -50.2391 -409.95 
+      7 198.879 649 0 0 169.726 -50.2379 -411.35 
+      7 102.321 1738 17 1 167.754 -51.1402 100.05 
+      7 151.859 644 17 0 167.746 -51.1518 98.65 
+      7 105.695 1737 16 1 167.719 -51.4197 70.05 
+      7 135.569 643 16 0 167.718 -51.4305 68.65 
+      7 122.17 1737 15 1 167.59 -51.6421 40.05 
+      7 163.957 641 15 0 167.586 -51.6546 38.65 
+      7 133.377 1737 14 1 167.556 -51.7945 10.05 
+      7 176.203 641 14 0 167.552 -51.7962 8.65 
+      7 116.148 1736 13 1 167.494 -51.8708 -19.95 
+      7 113.08 640 13 0 167.492 -51.874 -21.35 
+      7 155.595 1736 12 1 167.531 -51.9166 -49.95 
+      7 112.598 640 12 0 167.536 -51.9199 -51.35 
+      7 372.759 1737 11 1 167.718 -52.0103 -79.95 
+      7 112.686 640 11 0 167.724 -52.0208 -81.35 
+      7 129.189 1737 10 1 167.727 -52.3116 -109.95 
+      7 99.7241 638 10 0 167.727 -52.3287 -111.35 
+      7 215.393 1737 9 1 167.7 -52.7505 -139.95 
+      7 108.47 636 9 0 167.7 -52.7741 -141.35 
+      7 148.558 1738 8 1 167.756 -53.2778 -169.95 
+      7 129.049 633 8 0 167.757 -53.3001 -171.35 
+      7 155.51 1738 7 1 167.82 -53.7131 -199.95 
+      7 139.183 631 7 0 167.819 -53.7311 -201.35 
+      7 149.699 1738 6 1 167.81 -54.027 -229.95 
+      7 93.5722 630 6 0 167.811 -54.0453 -231.35 
+      7 14.1079 629 6 0 167.811 -54.05 -231.675 
+      7 132.105 1737 5 1 167.745 -54.3209 -259.95 
+      7 96.8201 628 5 0 167.745 -54.3314 -261.35 
+      7 104.863 1737 4 1 167.695 -54.6347 -289.95 
+      7 117.337 626 4 0 167.694 -54.652 -291.35 
+      7 103.987 1737 3 1 167.728 -55.0174 -319.95 
+      7 171.017 625 3 0 167.731 -55.0398 -321.35 
+      7 203.136 1738 2 1 167.871 -55.6266 -349.95 
+      7 11.475 622 2 0 167.878 -55.6495 -351.35 
+      7 108.028 621 2 0 167.878 -55.65 -351.387 
+      7 118.215 1739 1 1 168.1 -56.1069 -379.95 
+      7 323.004 619 1 0 168.115 -56.1321 -381.35 
+      7 99.9577 1741 0 1 168.45 -56.5567 -409.95 
+      7 132.311 617 0 0 168.469 -56.5764 -411.35 
+      7 166.082 618 1 0 168.157 -56.25 -381.53 
+      7 133.275 620 1 0 168.439 -56.05 -381.651 
+Number of digits in this event =  51
+Using G4ParticleGun ... 
+9.96388 LIN
+gamma
+Event: 8
+Number of tracker hits in this event =  3
+      8 72.2182 901 0 1 0.289887 -123.079 -410.35 
+      8 78.3258 273 1 0 -1.61298 -125.537 -381.75 
+      8 51.6465 348 0 1 -110.528 -4.26483 -409.95 
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+9.02997 LIN
+gamma
+Event: 9
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+1.23977 LIN
+gamma
+Event: 10
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+3.53963 LIN
+gamma
+Event: 11
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+6.19732 LIN
+gamma
+Event: 12
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+7.28115 LIN
+gamma
+Event: 13
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+4.65531 LIN
+gamma
+Event: 14
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+7.89637 LIN
+gamma
+Event: 15
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+2.27496 LIN
+gamma
+Event: 16
+Number of tracker hits in this event =  0
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+8.87658 LIN
+gamma
+Event: 17
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+8.98146 LIN
+gamma
+Event: 18
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+2.15375 LIN
+gamma
+Event: 19
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+4.21645 LIN
+gamma
+Event: 20
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+4.51307 LIN
+gamma
+Event: 21
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+4.02734 LIN
+gamma
+Event: 22
+Number of tracker hits in this event =  13
+     22 157.5 946 4 1 9.25 99.6543 -289.99 
+     22 15.2676 945 4 1 9.2225 99.6394 -289.95 
+     22 9.43928 449 10 1 -90.154 -176.522 -110.35 
+     22 6.96904 269 5 0 -86.3434 -126.35 -261.595 
+     22 27.598 1416 8 1 103.473 -39.2109 -169.95 
+     22 3.30924 840 7 1 -12.05 -137.473 -200.019 
+     22 35.1484 207 7 0 -8.87572 -138.55 -201.405 
+     22 26.6693 56 10 0 3.8899 -168.778 -111.35 
+     22 18.6573 52 7 0 118.403 -169.75 -201.394 
+     22 17.6287 1159 4 0 -5.65168 51.8688 -291.713 
+     22 12.6286 137 10 0 -8.65326 -152.75 -111.563 
+     22 217.728 543 9 0 0.855215 -71.3713 -141.75 
+     22 186.299 542 9 0 1.16614 -71.45 -141.606 
+Number of digits in this event =  5
+Using G4ParticleGun ... 
+5.35331 LIN
+gamma
+Event: 23
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+3.21706 LIN
+gamma
+Event: 24
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+3.83725 LIN
+gamma
+Event: 25
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+5.29099 LIN
+gamma
+Event: 26
+Number of tracker hits in this event =  2
+     26 256.749 812 6 0 72.1574 -17.5914 -231.75 
+     26 173.851 813 6 0 72.7251 -17.45 -231.602 
+Number of digits in this event =  4
+Using G4ParticleGun ... 
+9.22637 LIN
+gamma
+Event: 27
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+3.38986 LIN
+gamma
+Event: 28
+Number of tracker hits in this event =  1
+     28 19.5756 1717 0 0 122.892 163.592 -411.75 
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+8.43664 LIN
+gamma
+Event: 29
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+5.95083 LIN
+gamma
+Event: 30
+Number of tracker hits in this event =  2
+     30 48.3798 492 8 0 87.2168 -81.45 -171.635 
+     30 187.764 1345 8 1 89.0552 -79.4039 -170.35 
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+3.75234 LIN
+gamma
+Event: 31
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+9.6555 LIN
+gamma
+Event: 32
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+9.76832 LIN
+gamma
+Event: 33
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+1.48304 LIN
+gamma
+Event: 34
+Number of tracker hits in this event =  41
+     34 173.244 1154 9 1 50.9414 18.6201 -140.103 
+     34 298.794 992 9 0 50.9704 18.6249 -141.35 
+     34 105.498 1157 8 1 51.5244 18.6822 -169.95 
+     34 145.152 993 8 0 51.5511 18.6849 -171.35 
+     34 96.0456 1160 7 1 52.1343 18.7748 -199.95 
+     34 113.823 993 7 0 52.1585 18.7757 -201.35 
+     34 3.21157 1162 6 1 52.6498 19.078 -229.95 
+     34 121.81 1163 6 1 52.65 19.0781 -229.96 
+     34 220.858 995 6 0 52.6717 19.0801 -231.35 
+     34 117.6 1165 5 1 53.2095 19.0874 -259.95 
+     34 123.934 995 5 0 53.2329 19.0718 -261.35 
+     34 160.138 1167 4 1 53.637 18.6296 -289.95 
+     34 108.424 992 4 0 53.6647 18.6181 -291.35 
+     34 122.865 1169 3 1 53.9526 18.2549 -319.95 
+     34 159.283 990 3 0 53.9682 18.2448 -321.35 
+     34 118.057 1171 2 1 54.4016 18.2839 -349.95 
+     34 259.904 991 2 0 54.4239 18.2876 -351.35 
+     34 155.23 1173 1 1 54.8318 18.5801 -379.95 
+     34 148.489 992 1 0 54.8479 18.6045 -381.35 
+     34 131.659 1174 0 1 54.8573 19.0237 -409.95 
+     34 119.22 994 0 0 54.8466 19.0322 -411.35 
+     34 37.563 1415 1 1 103.259 -41.7439 -380.35 
+     34 192.197 1416 1 1 103.35 -41.7913 -380.304 
+     34 146.703 1173 0 1 54.85 19.0197 -410.297 
+     34 110.585 1154 8 1 50.9233 18.5822 -169.95 
+     34 185.916 992 8 0 50.9225 18.5808 -171.35 
+     34 120.666 1154 7 1 50.8886 18.5542 -199.95 
+     34 118.21 992 7 0 50.8878 18.5532 -201.35 
+     34 119.268 1154 6 1 50.8923 18.5317 -229.95 
+     34 182.944 992 6 0 50.8917 18.5306 -231.35 
+     34 109.384 1154 5 1 50.8758 18.4887 -259.95 
+     34 109.17 992 5 0 50.8742 18.4862 -261.35 
+     34 108.278 1153 4 1 50.8261 18.4303 -289.95 
+     34 191.293 991 4 0 50.8239 18.4276 -291.35 
+     34 123.113 1153 3 1 50.7954 18.3772 -319.95 
+     34 263.422 991 3 0 50.7946 18.3749 -321.35 
+     34 134.201 1153 2 1 50.7962 18.3339 -349.95 
+     34 131.988 1153 1 1 50.8363 18.3016 -379.95 
+     34 125.59 991 1 0 50.8379 18.2998 -381.35 
+     34 123.27 1154 0 1 50.8627 18.2633 -409.95 
+     34 180.3 991 0 0 50.8644 18.2622 -411.35 
+Number of digits in this event =  28
+Using G4ParticleGun ... 
+8.21937 LIN
+gamma
+Event: 35
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+8.23058 LIN
+gamma
+Event: 36
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+7.06243 LIN
+gamma
+Event: 37
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+8.28081 LIN
+gamma
+Event: 38
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+1.60407 LIN
+gamma
+Event: 39
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+2.31016 LIN
+gamma
+Event: 40
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+3.72197 LIN
+gamma
+Event: 41
+Number of tracker hits in this event =  4
+     41 46.8185 1237 15 0 -162.024 67.5183 38.25 
+     41 6.79244 87 15 1 -162.565 66.5692 39.65 
+     41 17.753 1229 15 0 -163.838 66.0474 38.65 
+     41 177.87 1230 15 0 -163.855 66.05 38.6316 
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+4.63102 LIN
+gamma
+Event: 42
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+4.32801 LIN
+gamma
+Event: 43
+Number of tracker hits in this event =  75
+     43 94.7185 1300 12 1 80.1806 22.4827 -50.1918 
+     43 311.66 1012 12 0 80.181 22.4828 -51.35 
+     43 241.167 1300 11 1 80.2055 22.4906 -79.95 
+     43 239.649 1012 11 0 80.2069 22.4913 -81.35 
+     43 261.047 1300 10 1 80.2445 22.5231 -109.95 
+     43 893.496 1012 10 0 80.2465 22.5247 -111.35 
+     43 504.537 1301 9 1 80.2947 22.5667 -139.95 
+     43 258.527 1012 9 0 80.2971 22.5688 -141.35 
+     43 547.444 1301 8 1 80.3378 22.5973 -169.95 
+     43 332.739 1012 8 0 80.3397 22.5986 -171.35 
+     43 316.632 1301 7 1 80.3818 22.618 -199.95 
+     43 354.49 1012 7 0 80.3838 22.6192 -201.35 
+     43 311.608 1301 6 1 80.4357 22.6376 -229.95 
+     43 246.361 1012 6 0 80.4383 22.6384 -231.35 
+     43 300.71 1302 5 1 80.4949 22.6624 -259.95 
+     43 123.933 1013 5 0 80.4978 22.6636 -261.35 
+     43 272.288 1302 4 1 80.5537 22.688 -289.95 
+     43 238.271 1013 4 0 80.5569 22.6891 -291.35 
+     43 250.221 1302 3 1 80.6178 22.7042 -319.95 
+     43 170.941 1013 3 0 80.6207 22.705 -321.35 
+     43 244.111 1303 2 1 80.6668 22.7237 -349.95 
+     43 105.035 1013 2 0 80.6688 22.7241 -351.35 
+     43 336.025 1303 1 1 80.6966 22.7282 -379.95 
+     43 124.481 1013 1 0 80.6982 22.7286 -381.35 
+     43 449.837 1303 0 1 80.7379 22.7375 -409.95 
+     43 141.169 1013 0 0 80.7398 22.738 -411.35 
+     43 108.656 1015 9 0 80.3892 23.1318 -141.35 
+     43 107.029 1023 8 0 80.2657 24.8346 -171.35 
+     43 28.2689 1024 8 0 80.2613 24.85 -171.674 
+     43 130.705 1297 7 1 79.6226 26.1843 -199.95 
+     43 13.1876 1030 7 0 79.5793 26.2487 -201.35 
+     43 124.08 1031 7 0 79.5781 26.25 -201.381 
+     43 239.881 1292 6 1 78.5439 28.1699 -229.95 
+     43 115.234 1041 6 0 78.5003 28.2703 -231.351 
+     43 121.602 1289 5 1 78.031 30.1453 -259.95 
+     43 143.593 1050 5 0 78.0027 30.1971 -261.35 
+     43 142.469 1286 4 1 77.4392 31.0013 -289.95 
+     43 73.8777 1054 4 0 77.3836 31.044 -291.35 
+     43 32.8456 1055 4 0 77.3736 31.05 -291.595 
+     43 126.11 1280 3 1 76.2234 31.6513 -319.95 
+     43 295.484 1058 3 0 76.1457 31.7058 -321.35 
+     43 134.222 1270 2 1 74.1746 32.5833 -349.95 
+     43 114.947 1062 2 0 74.0645 32.5803 -351.351 
+     43 163.254 1257 1 1 71.5804 32.6775 -379.95 
+     43 105.679 1063 1 0 71.4306 32.6855 -381.35 
+     43 124.871 1239 0 1 68.0204 32.4894 -409.95 
+     43 131.91 1062 0 0 67.8212 32.4571 -411.35 
+     43 27.0874 1061 0 0 67.7799 32.45 -411.65 
+     43 221.539 1011 9 0 80.4113 22.3441 -141.35 
+     43 123.764 1302 8 1 80.4827 23.2407 -169.95 
+     43 155.697 1016 8 0 80.4783 23.2676 -171.35 
+     43 141.994 1299 7 1 79.9866 24.0848 -199.95 
+     43 123.783 1020 7 0 79.9652 24.1357 -201.352 
+     43 196.966 1018 6 0 78.6098 23.8066 -231.35 
+     43 101.657 1290 5 1 78.2117 22.9312 -259.95 
+     43 178.049 1014 5 0 78.2402 22.9164 -261.35 
+     43 127.001 1295 4 1 79.2284 22.7703 -289.95 
+     43 174.717 1300 3 1 80.2045 21.9413 -319.951 
+     43 103.074 1009 3 0 80.2462 21.9033 -321.35 
+     43 127.296 1304 2 1 80.9247 21.0499 -349.95 
+     43 115.971 1004 2 0 80.9473 21.027 -351.35 
+     43 124.024 1306 1 1 81.374 21.0043 -379.95 
+     43 92.4979 1004 1 0 81.4006 21.003 -381.35 
+     43 182.523 1311 0 1 82.2556 20.6363 -409.95 
+     43 131.69 1002 0 0 82.2903 20.6152 -411.35 
+     43 69.9021 1010 9 0 80.3507 22.25 -141.683 
+     43 123.124 1406 8 1 101.432 -22.4039 -169.95 
+     43 56.9 1011 10 0 80.0862 22.4499 -111.459 
+     43 178.928 1300 9 1 80.2264 22.53 -139.95 
+     43 157.972 1012 5 0 80.486 22.5109 -261.35 
+     43 106.705 1012 4 0 80.5554 22.4914 -291.35 
+     43 123.686 1012 3 0 80.6161 22.4716 -321.35 
+     43 121.006 1012 2 0 80.6526 22.4915 -351.35 
+     43 119.473 1012 1 0 80.6555 22.4975 -381.35 
+     43 134.302 1012 0 0 80.6865 22.4618 -411.35 
+Number of digits in this event =  57
+Using G4ParticleGun ... 
+5.94968 LIN
+gamma
+Event: 44
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+5.28015 LIN
+gamma
+Event: 45
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+6.97073 LIN
+gamma
+Event: 46
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+3.03726 LIN
+gamma
+Event: 47
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+7.12166 LIN
+gamma
+Event: 48
+Number of tracker hits in this event =  2
+     48 82.8419 1475 4 0 -87.8323 115.15 -291.735 
+     48 380.387 454 4 1 -89.0992 116.22 -290.35 
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+3.09521 LIN
+gamma
+Event: 49
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+8.6629 LIN
+gamma
+Event: 50
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+6.6262 LIN
+gamma
+Event: 51
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+7.23772 LIN
+gamma
+Event: 52
+Number of tracker hits in this event =  4
+     52 59.483 64 18 0 -166.878 -167.15 128.383 
+     52 27.1161 717 17 0 -65.5634 -36.6379 98.2504 
+     52 203.606 716 17 0 -65.6175 -36.65 98.2948 
+     52 209.824 715 17 0 -65.8994 -36.85 98.4352 
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+6.0536 LIN
+gamma
+Event: 53
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+6.32366 LIN
+gamma
+Event: 54
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+2.71856 LIN
+gamma
+Event: 55
+Number of tracker hits in this event =  39
+     55 388.911 1292 10 0 -175.316 78.5775 -111.366 
+     55 290.495 24 9 1 -175.166 78.5068 -139.95 
+     55 249.352 1292 9 0 -175.158 78.5002 -141.35 
+     55 238.079 25 8 1 -175.077 78.2547 -169.95 
+     55 140.943 1290 8 0 -175.066 78.2433 -171.35 
+     55 107.349 26 7 1 -174.905 78.0554 -199.95 
+     55 151.682 1289 7 0 -174.895 78.0454 -201.35 
+     55 218.705 26 6 1 -174.767 77.7617 -229.95 
+     55 126.661 1288 6 0 -174.761 77.7491 -231.35 
+     55 149.803 27 5 1 -174.708 77.4561 -259.95 
+     55 125.321 1286 5 0 -174.702 77.4416 -261.35 
+     55 129.187 27 4 1 -174.583 77.2039 -289.95 
+     55 99.2716 1285 4 0 -174.577 77.1932 -291.35 
+     55 158.394 28 3 1 -174.489 77.0852 -319.95 
+     55 116.271 1285 3 0 -174.485 77.083 -321.35 
+     55 238.009 28 2 1 -174.452 77.0332 -349.95 
+     55 137.717 1284 2 0 -174.45 77.0305 -351.35 
+     55 133.831 28 1 1 -174.402 76.9608 -379.95 
+     55 158.463 1284 1 0 -174.401 76.9558 -381.35 
+     55 116.222 28 0 1 -174.5 76.9439 -409.95 
+     55 110.094 1284 0 0 -174.51 76.9456 -411.35 
+     55 119.082 24 8 1 -175.321 78.5974 -169.95 
+     55 146.914 1292 8 0 -175.321 78.5975 -171.35 
+     55 108.995 24 7 1 -175.314 78.6041 -199.95 
+     55 125.265 1292 7 0 -175.313 78.6037 -201.35 
+     55 130.271 24 6 1 -175.294 78.5944 -229.95 
+     55 170.06 1292 6 0 -175.293 78.5939 -231.35 
+     55 97.3297 24 5 1 -175.262 78.5843 -259.95 
+     55 102.903 1292 5 0 -175.261 78.5836 -261.35 
+     55 122.908 24 4 1 -175.242 78.5733 -289.95 
+     55 141.034 1292 4 0 -175.241 78.573 -291.35 
+     55 123.631 24 3 1 -175.216 78.5771 -319.95 
+     55 118.029 1292 3 0 -175.215 78.5774 -321.35 
+     55 134.9 24 2 1 -175.184 78.5834 -349.95 
+     55 123.382 1292 2 0 -175.182 78.5839 -351.35 
+     55 116.585 25 1 1 -175.137 78.5883 -379.95 
+     55 101.514 1292 1 0 -175.135 78.5885 -381.35 
+     55 97.9598 25 0 1 -175.103 78.5855 -409.95 
+     55 121.147 1292 0 0 -175.101 78.5858 -411.35 
+Number of digits in this event =  28
+Using G4ParticleGun ... 
+3.85318 LIN
+gamma
+Event: 56
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+6.3461 LIN
+gamma
+Event: 57
+Number of tracker hits in this event =  1
+     57 72.6487 868 4 1 -6.25 98.2809 -290.34 
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+7.80097 LIN
+gamma
+Event: 58
+Number of tracker hits in this event =  3
+     58 37.4333 27 11 0 154.383 -174.653 -81.75 
+     58 0.79703 196 14 0 172.074 -140.89 8.25 
+     58 62.0791 197 14 0 172.146 -140.75 8.61996 
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+1.47967 LIN
+gamma
+Event: 59
+Number of tracker hits in this event =  4
+     59 6.47446 1302 1 0 -7.10251 80.65 -381.421 
+     59 159.137 868 1 1 -6.38609 80.3025 -380.35 
+     59 48.0949 1297 1 0 -5.73821 79.5363 -381.35 
+     59 250.521 1296 1 0 -5.69031 79.4499 -381.437 
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+6.48002 LIN
+gamma
+Event: 60
+Number of tracker hits in this event =  8
+     60 259.113 643 0 0 -80.5073 -51.4105 -411.75 
+     60 72.8414 644 0 0 -81.2558 -51.25 -411.499 
+     60 56.8229 645 0 0 -81.4177 -51.0496 -411.593 
+     60 59.3688 646 0 0 -81.4361 -50.8499 -411.607 
+     60 87.7705 647 0 0 -81.4346 -50.6494 -411.584 
+     60 87.583 648 0 0 -81.509 -50.4499 -411.582 
+     60 85.0612 649 0 0 -81.5037 -50.25 -411.494 
+     60 238.115 650 0 0 -81.5232 -50.0497 -411.513 
+Number of digits in this event =  5
+Using G4ParticleGun ... 
+2.18086 LIN
+gamma
+Event: 61
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+8.92314 LIN
+gamma
+Event: 62
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+3.69467 LIN
+gamma
+Event: 63
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+4.85311 LIN
+gamma
+Event: 64
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+9.76346 LIN
+gamma
+Event: 65
+Number of tracker hits in this event =  7
+     65 8.87752 1639 1 1 148.064 42.9174 -380.35 
+     65 16.9854 1638 1 1 147.95 43.0001 -379.996 
+     65 338.407 1133 2 0 123.97 46.6538 -351.75 
+     65 8.01282 1132 2 0 123.943 46.65 -351.661 
+     65 79.2691 1520 2 1 124.295 46.3773 -350.35 
+     65 78.972 1126 2 0 123.082 45.3983 -351.35 
+     65 176.82 1512 2 1 122.596 44.9415 -350.35 
+Number of digits in this event =  6
+Using G4ParticleGun ... 
+3.43818 LIN
+gamma
+Event: 66
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+3.83446 LIN
+gamma
+Event: 67
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+2.11174 LIN
+gamma
+Event: 68
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+3.8799 LIN
+gamma
+Event: 69
+Number of tracker hits in this event =  1
+     69 12.4353 590 1 1 -61.85 -39.5516 -380.266 
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+1.00378 LIN
+gamma
+Event: 70
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+1.79616 LIN
+gamma
+Event: 71
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+5.96924 LIN
+gamma
+Event: 72
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+2.25244 LIN
+gamma
+Event: 73
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+7.59069 LIN
+gamma
+Event: 74
+Number of tracker hits in this event =  2
+     74 20.3912 687 0 1 -42.5992 -13.427 -410.299 
+     74 308.975 833 0 0 -42.5991 -13.427 -411.35 
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+2.62122 LIN
+gamma
+Event: 75
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+2.86741 LIN
+gamma
+Event: 76
+Number of tracker hits in this event =  1
+     76 111.425 924 1 1 4.85 82.4297 -380.029 
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+2.83734 LIN
+gamma
+Event: 77
+Number of tracker hits in this event =  3
+     77 58.1655 850 5 1 -9.91113 -117.867 -260.35 
+     77 191.702 851 5 1 -9.85 -117.998 -260.257 
+     77 295.538 1626 0 0 -139.458 145.526 -411.75 
+Number of digits in this event =  4
+Using G4ParticleGun ... 
+4.35003 LIN
+gamma
+Event: 78
+Number of tracker hits in this event =  1
+     78 36.9758 685 14 0 -57.9931 -42.9518 8.25 
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+5.55847 LIN
+gamma
+Event: 79
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+6.35998 LIN
+gamma
+Event: 80
+Number of tracker hits in this event =  2
+     80 77.5747 1602 22 1 140.602 -151.464 249.65 
+     80 0.782908 148 22 0 145.868 -150.55 248.632 
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+6.76865 LIN
+gamma
+Event: 81
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+7.34975 LIN
+gamma
+Event: 82
+Number of tracker hits in this event =  1
+     82 4.37978 457 4 0 -122.868 -88.45 -291.524 
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+8.28504 LIN
+gamma
+Event: 83
+Number of tracker hits in this event =  0
+Number of digits in this event =  3
+Using G4ParticleGun ... 
+7.85749 LIN
+gamma
+Event: 84
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+6.06235 LIN
+gamma
+Event: 85
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+5.67233 LIN
+gamma
+Event: 86
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+1.11032 LIN
+gamma
+Event: 87
+Number of tracker hits in this event =  63
+     87 5.09512 320 16 1 -116.038 145.849 69.6629 
+     87 254.663 1628 16 0 -116.038 145.849 68.65 
+     87 262.479 320 15 1 -116.031 145.835 40.05 
+     87 284.975 1628 15 0 -116.032 145.834 38.65 
+     87 240.005 320 14 1 -116.068 145.789 10.05 
+     87 347.869 1628 14 0 -116.068 145.787 8.65 
+     87 258.517 320 13 1 -116.065 145.716 -19.95 
+     87 173.057 1627 13 0 -116.065 145.713 -21.35 
+     87 234.805 320 12 1 -116.072 145.656 -49.95 
+     87 166.099 1627 12 0 -116.072 145.652 -51.35 
+     87 121.901 320 11 1 -116.076 145.57 -79.95 
+     87 156.68 1627 11 0 -116.076 145.566 -81.35 
+     87 133.827 320 10 1 -116.116 145.465 -109.95 
+     87 130.001 1626 10 0 -116.125 145.453 -111.35 
+     87 112.455 319 9 1 -116.243 145.1 -139.95 
+     87 120.739 1624 9 0 -116.248 145.082 -141.35 
+     87 351.144 321 8 1 -115.853 144.635 -169.95 
+     87 123.659 1622 8 0 -115.822 144.615 -171.35 
+     87 351.683 321 7 1 -115.8 143.672 -199.95 
+     87 134.806 1617 7 0 -115.802 143.628 -201.35 
+     87 212.002 320 6 1 -116.117 142.699 -229.95 
+     87 121.552 1612 6 0 -116.134 142.664 -231.35 
+     87 126.804 316 5 1 -116.801 141.899 -259.95 
+     87 134.867 1608 5 0 -116.839 141.859 -261.35 
+     87 87.2031 312 4 1 -117.692 140.892 -289.95 
+     87 113.648 1603 4 0 -117.735 140.844 -291.35 
+     87 106.401 307 3 1 -118.699 139.762 -319.95 
+     87 193.226 1597 3 0 -118.739 139.715 -321.35 
+     87 127.788 303 2 1 -119.417 138.758 -349.95 
+     87 191.431 1593 2 0 -119.429 138.754 -351.35 
+     87 113.983 302 1 1 -119.649 138.668 -379.95 
+     87 125.088 1592 1 0 -119.659 138.67 -381.35 
+     87 122.44 299 0 1 -120.17 138.65 -409.95 
+     87 145.93 1592 0 0 -120.19 138.648 -411.35 
+     87 449.742 321 6 1 -115.95 142.499 -230.07 
+     87 106.876 1626 11 0 -116.095 145.55 -81.3971 
+     87 121.23 1628 13 0 -115.977 145.846 -21.35 
+     87 127.831 321 12 1 -115.918 145.846 -49.95 
+     87 170.448 1628 12 0 -115.914 145.85 -51.35 
+     87 115.038 321 11 1 -115.895 146.01 -79.95 
+     87 154.011 1629 11 0 -115.893 146.016 -81.35 
+     87 118.697 321 10 1 -115.857 146.189 -109.95 
+     87 152.939 1630 10 0 -115.856 146.197 -111.35 
+     87 105.521 321 9 1 -115.877 146.38 -139.95 
+     87 128.676 1631 9 0 -115.878 146.393 -141.35 
+     87 185.782 1632 8 0 -115.859 146.636 -171.35 
+     87 129.252 1633 7 0 -115.812 146.912 -201.35 
+     87 145.905 1635 6 0 -115.745 147.211 -231.35 
+     87 107.769 323 5 1 -115.519 147.508 -259.95 
+     87 95.9735 1636 5 0 -115.508 147.52 -261.35 
+     87 98.3372 324 4 1 -115.168 147.739 -289.95 
+     87 43.9858 1637 4 0 -115.151 147.749 -291.35 
+     87 67.0244 1638 4 0 -115.149 147.75 -291.516 
+     87 132.328 326 3 1 -114.823 148.003 -319.95 
+     87 215.316 1639 3 0 -114.81 148.015 -321.35 
+     87 123.204 328 2 1 -114.525 148.221 -349.95 
+     87 116.373 1640 2 0 -114.511 148.23 -351.35 
+     87 162.577 330 1 1 -114.139 148.347 -379.95 
+     87 132.384 1641 1 0 -114.119 148.355 -381.35 
+     87 109.203 332 0 1 -113.618 148.507 -409.95 
+     87 368 1641 0 0 -113.592 148.514 -411.35 
+     87 132.028 1638 3 0 -114.876 147.95 -321.427 
+     87 196.119 1632 7 0 -115.04 146.585 -201.35 
+Number of digits in this event =  49
+Using G4ParticleGun ... 
+5.14493 LIN
+gamma
+Event: 88
+Number of tracker hits in this event =  58
+     88 180.199 948 12 0 -46.688 9.78629 -51.4274 
+     88 277.881 666 11 1 -46.6829 9.78271 -79.95 
+     88 100.331 948 11 0 -46.6825 9.78254 -81.35 
+     88 230.906 667 10 1 -46.6183 9.57993 -109.95 
+     88 139.303 947 10 0 -46.6152 9.56964 -111.35 
+     88 245.423 667 9 1 -46.5539 9.3496 -139.95 
+     88 205.018 946 9 0 -46.5509 9.33852 -141.35 
+     88 160.466 667 8 1 -46.4952 9.11466 -169.95 
+     88 137.392 945 8 0 -46.4925 9.10375 -171.35 
+     88 239.624 668 7 1 -46.4429 8.87981 -199.95 
+     88 127.464 944 7 0 -46.4403 8.8689 -201.35 
+     88 114.254 668 6 1 -46.3891 8.65241 -229.95 
+     88 100.877 942 6 0 -46.3866 8.64193 -231.35 
+     88 111.576 668 5 1 -46.3363 8.43348 -259.95 
+     88 130.381 941 5 0 -46.3336 8.42358 -261.35 
+     88 124.778 668 4 1 -46.2841 8.22933 -289.95 
+     88 304.249 940 4 0 -46.2816 8.21974 -291.35 
+     88 236.461 669 3 1 -46.2311 8.01806 -319.95 
+     88 105.245 939 3 0 -46.2288 8.008 -321.35 
+     88 161.565 669 2 1 -46.1829 7.80115 -349.95 
+     88 145.196 938 2 0 -46.181 7.79098 -351.35 
+     88 124.785 669 1 1 -46.1452 7.57534 -379.95 
+     88 113.984 937 1 0 -46.1432 7.56503 -381.35 
+     88 153.257 669 0 1 -46.1048 7.35029 -409.95 
+     88 108.455 936 0 0 -46.1028 7.33982 -411.35 
+     88 59.0518 288 2 1 -122.35 39.6413 -350.337 
+     88 138.313 949 11 0 -46.7363 9.88028 -81.35 
+     88 133.41 666 10 1 -46.8263 9.93568 -109.95 
+     88 110.065 949 10 0 -46.8359 9.94116 -111.35 
+     88 106.838 664 9 1 -47.0926 10.062 -139.95 
+     88 112.551 950 9 0 -47.1113 10.0751 -141.35 
+     88 107.602 663 8 1 -47.3094 10.3072 -169.95 
+     88 135.237 951 8 0 -47.3129 10.3202 -171.35 
+     88 133.93 664 7 1 -47.2162 10.6794 -199.95 
+     88 121.121 953 7 0 -47.2095 10.6987 -201.35 
+     88 111.424 664 6 1 -47.1157 10.9308 -229.95 
+     88 103.505 954 6 0 -47.1142 10.9409 -231.35 
+     88 112.425 666 5 1 -46.7809 10.9303 -259.95 
+     88 140.281 954 5 0 -46.768 10.9337 -261.35 
+     88 136.257 667 4 1 -46.5085 10.8685 -289.95 
+     88 115.323 954 4 0 -46.496 10.864 -291.35 
+     88 115.851 954 3 0 -46.1535 10.8543 -321.35 
+     88 133.684 671 2 1 -45.6957 10.8942 -349.95 
+     88 185.885 954 2 0 -45.6717 10.8973 -351.35 
+     88 131.213 673 1 1 -45.3351 10.7553 -379.95 
+     88 135.027 953 1 0 -45.3187 10.7502 -381.35 
+     88 113.997 675 0 1 -44.9268 10.5366 -409.95 
+     88 101.437 952 0 0 -44.9057 10.5243 -411.35 
+     88 72.4232 987 7 0 -57.2575 17.5844 -201.75 
+     88 48.0463 950 8 0 -47.2971 10.25 -171.705 
+     88 48.3861 348 8 0 -62.5445 -110.418 -171.75 
+     88 91.2934 347 8 0 -62.5594 -110.55 -171.71 
+     88 84.1445 346 8 0 -62.4814 -110.75 -171.588 
+     88 79.6697 345 8 0 -62.4516 -110.95 -171.469 
+     88 122.501 344 8 0 -62.407 -111.151 -171.529 
+     88 35.0692 343 8 0 -62.2988 -111.35 -171.717 
+     88 221.278 740 7 1 -31.9156 -137.929 -199.95 
+     88 50.0424 741 7 1 -31.8499 -137.938 -200.014 
+Number of digits in this event =  32
+Using G4ParticleGun ... 
+9.01611 LIN
+gamma
+Event: 89
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+6.68566 LIN
+gamma
+Event: 90
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+9.31583 LIN
+gamma
+Event: 91
+Number of tracker hits in this event =  0
+Number of digits in this event =  2
+Using G4ParticleGun ... 
+1.31321 LIN
+gamma
+Event: 92
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+6.40309 LIN
+gamma
+Event: 93
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+4.35389 LIN
+gamma
+Event: 94
+Number of tracker hits in this event =  0
+Number of digits in this event =  1
+Using G4ParticleGun ... 
+8.92512 LIN
+gamma
+Event: 95
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+5.91825 LIN
+gamma
+Event: 96
+Number of tracker hits in this event =  0
+Number of digits in this event =  0
+Using G4ParticleGun ... 
+5.48207 LIN
+gamma
+Event: 97
+Number of tracker hits in this event =  84
+     97 233.021 718 12 1 -36.351 -118.644 -49.955 
+     97 244.627 307 12 0 -36.3344 -118.638 -51.35 
+     97 105.497 721 11 1 -35.8167 -118.742 -79.95 
+     97 224.322 307 11 0 -35.7948 -118.746 -81.35 
+     97 139.209 722 10 1 -35.4558 -118.792 -109.95 
+     97 119.084 306 10 0 -35.4362 -118.789 -111.35 
+     97 161.88 725 9 1 -34.9492 -118.661 -139.95 
+     97 299.365 307 9 0 -34.9246 -118.655 -141.35 
+     97 245.999 727 8 1 -34.6196 -118.428 -169.95 
+     97 111.137 308 8 0 -34.5963 -118.417 -171.35 
+     97 103.976 728 7 1 -34.2558 -118.16 -199.95 
+     97 185.064 310 7 0 -34.2377 -118.143 -201.35 
+     97 150.449 730 6 1 -34.0153 -117.524 -229.95 
+     97 122.256 313 6 0 -34.0002 -117.497 -231.35 
+     97 188.38 731 5 1 -33.8036 -117.025 -259.95 
+     97 127.094 315 5 0 -33.793 -116.993 -261.35 
+     97 243.414 732 4 1 -33.4942 -116.47 -289.95 
+     97 191.988 318 4 0 -33.4865 -116.453 -291.35 
+     97 113.915 733 3 1 -33.4022 -116.059 -319.95 
+     97 126.164 320 3 0 -33.3917 -116.035 -321.35 
+     97 145.792 734 2 1 -33.1291 -115.511 -349.95 
+     97 140.419 323 2 0 -33.113 -115.494 -351.35 
+     97 135.236 737 1 1 -32.6157 -115.365 -379.95 
+     97 35.3075 323 1 0 -32.5907 -115.352 -381.35 
+     97 67.5514 324 1 0 -32.5879 -115.35 -381.505 
+     97 165.014 739 0 1 -32.0789 -115.073 -409.95 
+     97 116.012 325 0 0 -32.0578 -115.057 -411.35 
+     97 226.95 335 4 0 -33.6472 -113.044 -291.35 
+     97 56.2092 336 4 0 -33.6493 -112.95 -291.456 
+     97 37.2462 609 4 0 -68.4859 -58.0624 -291.75 
+     97 45.9683 610 4 0 -68.4976 -58.05 -291.719 
+     97 31.6741 313 5 0 -33.8629 -117.504 -261.35 
+     97 82.126 312 5 0 -33.8451 -117.55 -261.493 
+     97 31.8567 778 4 1 -24.2833 -119.608 -289.95 
+     97 86.2726 779 4 1 -24.25 -119.61 -290.069 
+     97 94.1774 302 4 0 -23.6938 -119.732 -291.35 
+     97 29.609 301 4 0 -23.6378 -119.75 -291.63 
+     97 108.314 790 3 1 -21.8656 -130.002 -319.95 
+     97 52.5258 249 3 0 -21.7972 -130.292 -321.35 
+     97 79.4955 248 3 0 -21.8074 -130.35 -321.56 
+     97 284.684 789 2 1 -22.1293 -146.231 -349.95 
+     97 200.736 790 2 1 -22.05 -146.846 -350.318 
+     97 32.5295 161 2 0 -22.0627 -147.831 -351.35 
+     97 194.453 160 2 0 -22.0815 -147.95 -351.424 
+     97 22.8279 159 2 0 -22.2298 -148.15 -351.694 
+     97 115.409 826 1 1 -14.8057 -159.109 -379.95 
+     97 535.582 827 1 1 -14.65 -159.088 -380.135 
+     97 163.857 791 2 1 -21.85 -146.196 -350.149 
+     97 106.775 718 11 1 -36.3701 -118.649 -79.95 
+     97 186.726 718 10 1 -36.3894 -118.645 -109.95 
+     97 112.667 307 10 0 -36.3902 -118.645 -111.35 
+     97 101.98 718 9 1 -36.4108 -118.642 -139.95 
+     97 210.525 718 8 1 -36.4316 -118.634 -169.95 
+     97 132.809 307 8 0 -36.4329 -118.633 -171.35 
+     97 387.809 717 7 1 -36.4583 -118.608 -199.95 
+     97 109.822 307 7 0 -36.4596 -118.607 -201.35 
+     97 153.191 717 6 1 -36.4782 -118.589 -229.95 
+     97 107.421 307 6 0 -36.4795 -118.587 -231.35 
+     97 262.703 717 5 1 -36.5061 -118.55 -259.95 
+     97 179.347 308 5 0 -36.5074 -118.549 -261.35 
+     97 134.222 717 4 1 -36.5341 -118.505 -289.95 
+     97 161.753 308 4 0 -36.5355 -118.502 -291.35 
+     97 154.957 717 3 1 -36.5624 -118.456 -319.95 
+     97 268.874 308 3 0 -36.5636 -118.454 -321.35 
+     97 104.699 717 2 1 -36.589 -118.408 -349.95 
+     97 117.884 308 2 0 -36.5905 -118.406 -351.35 
+     97 156.917 717 1 1 -36.6206 -118.353 -379.95 
+     97 67.9129 308 1 0 -36.6222 -118.35 -381.35 
+     97 41.5434 309 1 0 -36.6225 -118.35 -381.607 
+     97 115.202 716 0 1 -36.6547 -118.292 -409.95 
+     97 101.175 309 0 0 -36.6564 -118.289 -411.35 
+     97 47.6454 590 2 1 -61.9929 -90.986 -350.35 
+     97 24.8823 1242 7 0 0.35921 68.45 -201.609 
+     97 138.252 378 9 1 -104.483 -17.9844 -140.35 
+     97 67.9513 718 6 1 -36.45 -118.627 -230.207 
+     97 12.6947 310 6 0 -36.3093 -118.117 -231.35 
+     97 70.7831 309 6 0 -36.2968 -118.15 -231.371 
+     97 119.894 725 6 1 -35.0385 -118.896 -230.35 
+     97 285.583 724 6 1 -35.05 -119.099 -230.224 
+     97 45.958 716 7 1 -36.65 -118.459 -200.216 
+     97 70.2704 303 7 0 -35.5737 -119.468 -201.35 
+     97 284.099 302 7 0 -35.4872 -119.55 -201.518 
+     97 238.017 313 10 0 -37.2311 -117.472 -111.35 
+     97 142.94 869 9 1 -6.24056 -136.837 -139.95 
+Number of digits in this event =  45
+Using G4ParticleGun ... 
+4.04263 LIN
+gamma
+Event: 98
+Number of tracker hits in this event =  9
+     98 79.5533 484 2 0 144.402 -83.1549 -351.589 
+     98 447.875 1621 1 1 144.368 -83.1581 -379.95 
+     98 288.815 484 1 0 144.365 -83.16 -381.35 
+     98 123.675 1620 0 1 144.349 -83.2343 -409.95 
+     98 243.505 484 0 0 144.348 -83.2365 -411.35 
+     98 92.6892 901 2 1 0.45 -144.017 -350.126 
+     98 1.01443 900 2 1 0.25 -144.073 -349.996 
+     98 129.078 1621 0 1 144.431 -83.1547 -409.95 
+     98 80.6337 1443 12 1 108.95 -14.0982 -50.1682 
+Number of digits in this event =  8
+Using G4ParticleGun ... 
+3.82778 LIN
+gamma
+Event: 99
+Number of tracker hits in this event =  5
+     99 102.977 1468 18 1 113.75 107.62 129.73 
+     99 67.0096 1515 19 1 123.204 131.289 159.65 
+     99 21.2985 778 9 1 -24.3426 47.7332 -140.35 
+     99 68.656 247 14 1 -130.596 -147.304 9.65 
+     99 106.211 1284 10 0 -25.2745 76.8536 -111.75 
+Number of digits in this event =  1
+ Run terminated.
+Run Summary
+  Number of events processed : 100
+  User=2.940000s Real=3.113770s Sys=0.010000s
+End of Run 0
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+Graphics systems deleted.
+Visualization Manager deleting...
+G4 kernel has come to Quit state.
+================== Deleting memory pools ===================
+Number of memory pools allocated: 17 of which, static: 0
+Dynamic pools deleted: 17 / Total memory freed: 0.097 MB
+============================================================
+RunManagerKernel is deleted. Good bye :)

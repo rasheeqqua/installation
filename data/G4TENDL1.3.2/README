@@ -1,0 +1,12 @@
+These data sets derive mostly from TENDL-2014, with some isotopes
+taken from ENDF/B-VII.1 .
+
+You find the following 5 subdirectories, each corresponding to one
+particle type (which can be easily inferred from the name), and
+with a more detailed README file:
+
+Proton/
+Deuteron/
+Triton/
+He3/
+Alpha/
